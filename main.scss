@@ -1,6 +1,23 @@
 // Custom variables
+$main-text-color: white;
+$background-color: #1d0966;
 
+//===========================
+// Navbar
+//===========================
+$navbar-nav-item-padding-horizontal: 30px;
+$navbar-nav-item-color: white;
+$navbar-nav-item-hover-color: white;
+$navbar-nav-item-onclick-color: white;
+$navbar-nav-item-active-color: white;
 
+$navbar-item-color: white;
+
+//===========================
+// Logo
+//===========================
+$logo-color: white;
+$logo-hover-color: white;
 
 // Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -8,7 +25,20 @@
 
 
 // Custom mixin overwrites.
+//===========================
+// Navbar
+//===========================
+@mixin hook-navbar-nav-item-active(){
+    span{
+        border-bottom: 2px solid $main-text-color;
+    }
+}
 
+@mixin hook-navbar-nav-item-hover(){
+    span{
+        border-bottom: 2px solid $main-text-color;
+    }
+}
 
 
 // Import UIkit.
@@ -16,3 +46,20 @@
 
 
 //Custom CSS
+//===========================
+// Global
+//===========================
+body{
+    background: $background-color;
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.main-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
