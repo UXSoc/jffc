@@ -6,7 +6,6 @@ $background-color: #181743;
 // Fonts
 //===========================
 $global-font-family: 'Work Sans', sans-serif;
-$base-heading-font-family: 'Forza', sans-serif;
 
 //===========================
 // Navbar
@@ -83,5 +82,13 @@ h2{
 .main-container{
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+//===========================
+// Navbar
+//===========================
+.nav-logo{
+    width: 38%;
+    height: auto;
 }
 
