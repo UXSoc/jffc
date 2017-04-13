@@ -5,7 +5,13 @@ $background-color: #181743;
 //===========================
 // Fonts
 //===========================
+@font-face {
+    font-family: "Athelas";
+    src:url("../fonts/Athelas.ttc");
+}
+
 $global-font-family: 'Work Sans', sans-serif;
+$base-heading-font-family: 'Athelas', sans-serif;
 
 //===========================
 // Navbar
@@ -92,3 +98,9 @@ h2{
     height: auto;
 }
 
+//===========================
+// Speakers
+//===========================
+.speaker-header{
+    font-size: 55px;
+}
