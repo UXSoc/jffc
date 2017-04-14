@@ -3,12 +3,29 @@ $main-text-color: white;
 $background-color: #181743;
 
 //===========================
+// Button
+//===========================
+$button-primary-background: #f70170;
+
+//===========================
 // Fonts
 //===========================
 @font-face {
     font-family: "Athelas";
     src:url("../fonts/Athelas.ttc");
 }
+
+//===========================
+// Grid
+//===========================
+$grid-large-gutter-horizontal-l: 140px;
+$grid-large-gutter-vertical-l: 90px;
+
+//===========================
+// Logo
+//===========================
+$logo-color: white;
+$logo-hover-color: white;
 
 $global-font-family: 'Work Sans', sans-serif;
 $base-heading-font-family: 'Athelas', sans-serif;
@@ -20,27 +37,30 @@ $navbar-background: $background-color;
 
 $navbar-nav-item-padding-horizontal: 30px;
 $navbar-nav-item-color: white;
+$navbar-nav-item-font-size: 16px;
+$navbar-nav-item-font-family: 'Work Sans';
 $navbar-nav-item-hover-color: white;
 $navbar-nav-item-onclick-color: white;
 $navbar-nav-item-active-color: white;
 
 $navbar-item-color: white;
 
-//===========================
-// Logo
-//===========================
-$logo-color: white;
-$logo-hover-color: white;
 
 // Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
 
 
+
 // Custom mixin overwrites.
 //===========================
 // Navbar
 //===========================
+@mixin hook-navbar{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
 @mixin hook-navbar-nav-item-active(){
     span{
         padding-top:2px;
@@ -59,6 +79,8 @@ $logo-hover-color: white;
 // Button
 //===========================
 @mixin hook-button(){
+    font-size: 18px;
+    width: 180px;
     border-radius: 40px;
 }
 
@@ -96,6 +118,14 @@ h2{
 .nav-logo{
     width: 38%;
     height: auto;
+}
+
+//===========================
+// Landing
+//===========================
+.landing-date{
+    color: #e65cd7;
+    font-size: 20px;
 }
 
 //===========================
