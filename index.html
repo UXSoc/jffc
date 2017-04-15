@@ -15,9 +15,9 @@
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>            
-                    <a class="uk-navbar-item uk-logo uk-visible@l" onclick="scrollToDiv('#landing')"> <img src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
+                    <a class="uk-navbar-item uk-logo uk-visible@l" href="#landing" uk-scroll> <img src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
                 </ul>
-                <ul class="uk-navbar-nav uk-visible@m uk-hidden@l">
+                <ul class="uk-navbar-nav uk-visible@m uk-hidden@l" uk-scrollspy-nav="closest: li; scroll: true;">
                     <li><a href="#about-section" uk-scroll><span>About</span></a></li>
                     <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
                     <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="uk-navbar-center uk-visible@l">
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
                     <li><a href="#about-section" uk-scroll><span>About</span></a></li>
                     <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
                     <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
