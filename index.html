@@ -15,17 +15,25 @@
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>            
-                    <a class="uk-navbar-item uk-logo uk-visible@l" href="index.html"> <img src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
+                    <a class="uk-navbar-item uk-logo uk-visible@l" onclick="scrollToDiv('#landing')"> <img src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
+                </ul>
+                <ul class="uk-navbar-nav uk-visible@m uk-hidden@l">
+                    <li><a href="#about-section" uk-scroll><span>About</span></a></li>
+                    <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
+                    <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
+                    <li><a href="#venue-section" uk-scroll><span>Venue</span></a></li>
+                    <li><a href="#faqs-section" uk-scroll><span>FAQs</span></a></li>
+                    <li><a href="#contact-section" uk-scroll><span>Contact us</span></a></li>
                 </ul>
             </div>
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav uk-visible@m">
-                    <li class="uk-active"><a href=""><span>About</span></a></li>
-                    <li><a href=""><span>Speakers</span></a></li>
-                    <li><a href=""><span>Schedule</span></a></li>
-                    <li><a href=""><span>Venue</span></a></li>
-                    <li><a href=""><span>FAQs</span></a></li>
-                    <li><a href=""><span>Contact us</span></a></li>
+            <div class="uk-navbar-center uk-visible@l">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#about-section" uk-scroll><span>About</span></a></li>
+                    <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
+                    <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
+                    <li><a href="#venue-section" uk-scroll><span>Venue</span></a></li>
+                    <li><a href="#faqs-section" uk-scroll><span>FAQs</span></a></li>
+                    <li><a href="#contact-section" uk-scroll><span>Contact us</span></a></li>
                 </ul>
             </div>
             <div class="uk-navbar-right " style="padding-right: 20px">
@@ -42,16 +50,22 @@
                         <br>
                         <div class="uk-child-width-expand@s uk-grid-small uk-grid-match" uk-grid>
                             <div class="uk-width-1-1@s mobile-nav-container">
-                                <a href="index.html ">HOME</a><br>
+                                <a onclick="scrollToDiv('#about-section')">About</a><br>
                             </div>
                             <div class="uk-width-1-1@s mobile-nav-container">
-                                <a href="about.html">ABOUT</a><br>
+                                <a onclick="scrollToDiv('#speakers-section')">Speakers</a><br>
                             </div>
                             <div class="uk-width-1-1@s mobile-nav-container">
-                                <a href="report.html">REPORT</a><br>
+                                <a onclick="scrollToDiv('#schedule-section')">Schedule</a><br>
                             </div>
                             <div class="uk-width-1-1@s mobile-nav-container">
-                                <a href="contact.html">CONTACT</a><br>
+                                <a onclick="scrollToDiv('#venue-section')">Venue</a><br>
+                            </div>
+                            <div class="uk-width-1-1@s mobile-nav-container">
+                                <a onclick="scrollToDiv('#faqs-section')">FAQs</a><br>
+                            </div>
+                            <div class="uk-width-1-1@s mobile-nav-container">
+                                <a onclick="scrollToDiv('#contact-section')">Contact us</a><br>
                             </div>
                         </div>   
                     </div>
@@ -82,9 +96,9 @@
             </div>
 
             <!--About-->
-            <div class="uk-width-1-1@m uk-text-center">
+            <div id="about-section" class="uk-width-1-1@m uk-text-center">
                 <img src="img/jffc-logo/about-logo.png" alt="ABOUT"/>
-                <h1>
+                <h1 class="about-header">
                     Uncover the secrets of<br>
                     great web design
                 </h1>
@@ -129,7 +143,7 @@
 
 
             <!--Speakers-->
-            <div class="uk-width-1-1@m uk-text-center">
+            <div id="speakers-section" class="uk-width-1-1@m uk-text-center">
                 <span class="subtitle">SPEAKERS</span>
                 <h1>
                     Learn from the industry's<br>
@@ -276,7 +290,7 @@
             </div>
 
             <!--Schedule-->
-            <div class="uk-width-1-1@m uk-text-center section-container">
+            <div id="schedule-section" class="uk-width-1-1@m uk-text-center section-container">
                 <span class="subtitle">SCHEDULE</span>
                 <h1>
                     See what's in store for<br>
@@ -343,7 +357,7 @@
 
 
             <!--Venue-->
-            <div class="section-container" uk-grid>
+            <div id="venue-section" class="section-container" uk-grid>
                 <div class="uk-width-2-5@m uk-text-left">
                     <span class="subtitle">VENUE</span>
                     <h1>Hewlett-Packard<br>Philippines</h1>
@@ -361,7 +375,7 @@
 
 
             <!--Get Tickets-->
-            <div class="section-container" uk-grid>
+            <div id="ticket-section" class="section-container" uk-grid>
                 <div class="uk-width-1-1@m uk-text-center">
                     <span class="subtitle">GET TICKETS</span>
                     <h1>Claim your wand</h1>
@@ -373,7 +387,7 @@
 
 
             <!--FAQs-->
-            <div class="uk-width-1-1@m uk-text-center section-container">
+            <div id="faqs-section" class="uk-width-1-1@m uk-text-center section-container">
                 <h1>Frequently Asked<br>Questions</h1>
                 <div class="uk-flex uk-flex-center"><hr width="25%"></div>
             </div>
@@ -527,40 +541,41 @@
                 <div class="uk-flex uk-flex-center"><hr width="25%"></div>
             </div>
 
-            <div uk-grid>
+            <div class="uk-grid-large" uk-grid>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <img src="" alt="SKETCH"/>
+                    <img src="img/sponsor-logos/sketch.png" alt="SKETCH"/>
                 </div>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <img src="" alt="ROSENFELD"/>
+                    <img src="img/sponsor-logos/rosenfield" alt="ROSENFELD"/>
                 </div>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <img src="" alt="INVISION"/>
+                    <img src="img/sponsor-logos/invision.png" alt="INVISION"/>
                 </div>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <img src="" alt="CLICK THE CITY"/>
+                    <img src="img/sponsor-logos/ctc.jpg" alt="CLICK THE CITY"/>
                 </div>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <img src="" alt="Z.COM"/>
+                    <img src="img/sponsor-logos/z.com.png" alt="Z.COM"/>
                 </div>
                 <div class="uk-width-1-2@m uk-text-center">
                     <div uk-grid>
                         <div class="uk-width-1-2@m uk-text-center">
-                            <img src="" alt="WHEN IN MANILA"/>
+                            <img src="img/sponsor-logos/when-in-manila.jpg" alt="WHEN IN MANILA"/>
                         </div>
                         <div class="uk-width-1-2@m uk-text-center">
-                            <img src="" alt="521"/>
+                            <img src="img/sponsor-logos/512.png" alt="512"/>
                         </div>
                     </div>
                 </div>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <img src="" alt="YELLOW PRINTS"/>
+                    <img src="img/sponsor-logos/yellow-prints.png" alt="YELLOW PRINTS"/>
                 </div>
             </div>
 
         </div>
 
-        <div class="uk-cover-container uk-height-large section-container">
+        <!--Footer / Contact Us-->
+        <div id="contact-section" class="uk-cover-container uk-height-large section-container">
             <img src="img/footer.png" alt="" uk-cover>
 
             <div class="uk-position-medium uk-position-cover uk-overlay uk-text-left" uk-grid>
@@ -582,8 +597,8 @@
             crossorigin="anonymous">
         </script>
         <script src="js/uikit.min.js"></script>
-
-        <script>
+            
+        <script type="text/javascript">
             
         </script>
     </body>
