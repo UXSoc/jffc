@@ -31,7 +31,7 @@ $logo-color: white;
 $logo-hover-color: white;
 
 $global-font-family: 'Work Sans', sans-serif;
-$base-heading-font-family: 'Athelas', sans-serif;
+$base-heading-font-family: 'Athelas', serif;
 
 //===========================
 // Navbar
@@ -40,7 +40,7 @@ $navbar-background: $background-color;
 
 $navbar-nav-item-padding-horizontal: 30px;
 $navbar-nav-item-color: white;
-$navbar-nav-item-font-size: 16px;
+$navbar-nav-item-font-size: 1em;
 $navbar-nav-item-font-family: 'Work Sans';
 $navbar-nav-item-hover-color: white;
 $navbar-nav-item-onclick-color: white;
@@ -82,7 +82,7 @@ $navbar-item-color: white;
 // Button
 //===========================
 @mixin hook-button(){
-    font-size: 18px;
+    font-size: 1.1em;
     width: 180px;
     border-radius: 40px;
 }
@@ -99,12 +99,12 @@ $navbar-item-color: white;
 body{
     background: $background-color;
     color: white;
-    font-size: 18px;
+    font-size: 1.05em;
 }
 
 h1{
     color: white;
-    font-size: 62px;
+    font-size: 3.5em;
 }
 
 h2{
@@ -124,7 +124,7 @@ hr{
 
 .subtitle{
     letter-spacing: 12px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -145,7 +145,7 @@ hr{
 //===========================
 .landing-date{
     color: #e65cd7;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 //===========================
@@ -162,14 +162,22 @@ hr{
 
 .about-date{
     color: #e65cd7;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 //===========================
 // Speakers
 //===========================
+.speaker-container{
+    padding-top: 30px;
+}
+
 .speaker-header{
     font-size: 55px;
+}
+
+.speaker-social-icon{
+    margin-left: 20px;
 }
 
 //===========================
@@ -180,24 +188,24 @@ hr{
 }
 
 .schedule-header{
-    font-size: 44px;
+    font-size: 2.6em;
     padding: 0;
     margin:0;
 }
 
 .schedule-date{
-    font-size: 18px;
+    font-size: 1.1em;
     color: #e65cd7;
 }
 
 .schedule-day{
     letter-spacing: 8px;
-    font-size: 24px;
+    font-size: 1.45em;
     font-weight: 500;
 }
 
 .schedule-day-number{
-    font-size:58px;
+    font-size:3.3em;
     font-weight: bold;
 }
 
