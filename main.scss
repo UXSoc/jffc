@@ -194,6 +194,11 @@ hr{
     max-width: 48px;
     max-height: auto;
     margin-left: 20px;
+
+    @media screen and (max-width: 640px) {
+        margin-left: 0;
+        margin-right: 20px;
+    }
 }
 
 //===========================
