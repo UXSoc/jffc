@@ -9459,8 +9459,10 @@ hr {
   font-weight: bold; }
 
 .sponsors-logo {
-  margin-top: 60px;
-  margin-bottom: 60px; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 65%;
+  height: auto; }
 
 .footer-hr {
   background-image: linear-gradient(to right, #999999, rgba(255, 0, 0, 0)); }
