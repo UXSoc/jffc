@@ -60,7 +60,7 @@ $navbar-item-color: white;
 // Navbar
 //===========================
 @mixin hook-navbar{
-    text-transform: capitalize;
+    text-transform: capitalize !important;
     font-weight: 500;
 }
 
@@ -119,6 +119,11 @@ h2{
     color: #e65cd7;
 }
 
+h3{
+    color: white;
+    font-size: 2.3em;
+}
+
 hr{
     border: 0;
     height: 3px;
@@ -158,6 +163,11 @@ hr{
 .nav-logo{
     width: 170px;
     height: auto;
+}
+
+.nav-mobile > li > a{
+    padding: 6px !important;
+    font-size: 0.8em !important;
 }
 
 //===========================
@@ -242,6 +252,27 @@ hr{
     font-weight: bold;
 }
 
+.workshop-box-container{
+    background-image: linear-gradient(to bottom, #990099, #cc00ff);
+}
+
+.workshop-box{
+    margin: 24px;
+}
+
+.workshop-header{
+    margin:0;
+    padding-top: 20px;
+}
+
+.workshop-subtitle{
+    color: black;
+}
+
+.workshop-description{
+    padding-bottom: 20px;
+}
+
 //===========================
 // Sponsors
 //===========================
@@ -260,7 +291,7 @@ hr{
 // Footer
 //===========================
 .footer-hr{
-    background-image: linear-gradient(to right, #999999, rgba(255,0,0,0));
+    background: linear-gradient(to right, #999999, rgba(255,0,0,0));
 }
 
 .footer-subtitle{
