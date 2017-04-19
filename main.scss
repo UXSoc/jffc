@@ -100,6 +100,10 @@ body{
     background: $background-color;
     color: white;
     font-size: 1.05em;
+
+    @media screen and (max-width: 640px) {
+        font-size: 0.85em;
+    }
 }
 
 h1{
@@ -136,7 +140,7 @@ hr{
 // Navbar
 //===========================
 .nav-logo{
-    width: 38%;
+    width: 170px;
     height: auto;
 }
 
@@ -146,6 +150,12 @@ hr{
 .landing-date{
     color: #e65cd7;
     font-size: 1.2em;
+}
+
+.ghost-button{
+    background: transparent;
+    border-color: #f70170;
+    color: #f70170;
 }
 
 //===========================
@@ -221,5 +231,5 @@ hr{
 // Footer
 //===========================
 .footer-hr{
-    
+    background-image: linear-gradient(to right, #999999, rgba(255,0,0,0));
 }
