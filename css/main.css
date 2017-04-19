@@ -9464,6 +9464,9 @@ hr {
   max-width: 65%;
   height: auto; }
 
+.sponsors-second-col {
+  margin-top: 20px; }
+
 .footer-hr {
   background-image: linear-gradient(to right, #999999, rgba(255, 0, 0, 0)); }
 
