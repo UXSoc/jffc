@@ -124,6 +124,11 @@ h3{
     font-size: 2.3em;
 }
 
+h4{
+    color: white;
+    font-size: 1.3em;
+}
+
 hr{
     border: 0;
     height: 3px;
@@ -252,12 +257,30 @@ hr{
     font-weight: bold;
 }
 
+.timeline-text-container{
+    margin-bottom: 50px;
+}
+
+.timeline-header{
+    margin:0;
+}
+
+.timeline-period{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.timeline-circle{
+    max-width: 70%; 
+    max-height: auto;
+}
+
 .workshop-box-container{
     background-image: linear-gradient(to bottom, #990099, #cc00ff);
 }
 
 .workshop-box{
-    margin: 24px;
+    margin: 0 24px;
 }
 
 .workshop-header{
@@ -270,7 +293,7 @@ hr{
 }
 
 .workshop-description{
-    padding-bottom: 20px;
+    margin-bottom:20px;
 }
 
 //===========================
