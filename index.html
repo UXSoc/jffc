@@ -26,8 +26,8 @@
                     <li><a href="#contact-section" uk-scroll><span>Contact us</span></a></li>
                 </ul>
             </div>
-            <div class="uk-navbar-center uk-visible@l">
-                <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav uk-visible@l" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
                     <li><a href="#about-section" uk-scroll><span>About</span></a></li>
                     <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
                     <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
@@ -348,14 +348,14 @@
                     <div class="uk-width-2-3 uk-flex uk-flex-column">
                         <span class="timeline-period">AM</span>
                         <div class="timeline-text-container" uk-grid>
-                            <div class="uk-width-1-6"><img src="img/circle.png" alt="" class="timeline-circle"/></div>
+                            <div id="circle-1" class="uk-width-1-6"><img src="img/circle.png" alt="" class="timeline-circle"/></div>
                             <div class="uk-width-expand">
                                 <h4 class="timeline-header">Registration</h4>
                                 <span>7:30 am</span>
                             </div>
                         </div>
                         <div class="timeline-text-container" uk-grid>
-                            <div class="uk-width-1-6"><img src="img/circle.png" alt="" class="timeline-circle"/></div>
+                            <div id="circle-2" class="uk-width-1-6"><img src="img/circle.png" alt="" class="timeline-circle"/></div>
                             <div class="uk-width-expand">
                                 <h4 class="timeline-header">Speaker 1</h4>
                                 <span>9:00 am</span>
@@ -749,27 +749,42 @@
         <div id="contact-section" class="uk-cover-container uk-height-large section-container">
             <img src="img/footer.png" alt="" uk-cover>
 
-            <div class="uk-position-medium@s uk-position-cover uk-overlay uk-text-left" uk-grid>
+            <div class="uk-position-medium uk-position-cover uk-overlay uk-text-left uk-visible@m uk-flex uk-flex-center uk-grid-medium footer-bottom-container" uk-grid>
                 <div class="uk-width-1-2@m">
                     <span class="subtitle footer-subtitle">CONTACT US</span>
                     <h1 class="footer-header">Have any questions?</h1>
                     <hr class="footer-hr uk-visible@s" width="25%">
-                    <hr class="footer-hr uk-hidden@s" width="50%">
                     <a class="uk-button uk-button-primary uk-visible@s" href=""><span>Send an owl</span></a>
+                    <div class="footer-made-by">Passionately made by User Experience Society</div>
+                </div>
+                <div class="uk-width-1-2@m uk-child-width-1-1">
+                    <div class="subtitle">FOLLOW US</div>
+                    <div class="uk-flex uk-flex-left">
+                        <div class="footer-social-icon"><a href=""><img src="img/social-media-icons/facebook.png" alt="facebook"/></a></div>
+                        <div class="footer-social-icon"><a href=""><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                    </div>
+                    <div class="uk-child-width-1-3 footer-presenter-container" uk-grid>
+                        <div><img src="img/presenter-logos/tw.png"/></div>
+                        <div><img src="img/presenter-logos/uxsoc.png"/></div>
+                        <div><img src="img/presenter-logos/pwdo.png"/></div>
+                    </div>
+                </div>
+                
+            </div>
 
-                    <div class="footer-button-container uk-hidden@s" uk-grid>
+            <!--Mobile Footer-->
+            <div class="uk-position-cover uk-overlay uk-text-left uk-hidden@m" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <span class="subtitle footer-subtitle">CONTACT US</span>
+                    <h1 class="footer-header">Have any questions?</h1>
+                    <hr class="footer-hr" width="50%">
+
+                    <div class="footer-button-container" uk-grid>
                         <div class="footer-button-div"><a class="uk-button uk-button-primary footer-button-mobile" href=""><span>Send an owl</span></a></div>
                         <div class="uk-flex uk-flex-left" uk-grid>
                             <div class="footer-social-icon"><a href=""><img src="img/social-media-icons/facebook.png" alt="facebook"/></a></div>
                             <div class="footer-social-icon"><a href=""><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
                         </div>
-                    </div>
-                </div>
-                <div class="uk-width-1-2@m uk-child-width-1-1 uk-visible@s">
-                    <span class="subtitle">FOLLOW US</span>
-                    <div class="uk-flex uk-flex-left" uk-grid>
-                        <div class="footer-social-icon"><a href=""><img src="img/social-media-icons/facebook.png" alt="facebook"/></a></div>
-                        <div class="footer-social-icon"><a href=""><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
                     </div>
                 </div>
             </div>
@@ -781,9 +796,9 @@
             crossorigin="anonymous">
         </script>
         <script src="js/uikit.min.js"></script>
-            
+
         <script type="text/javascript">
-            
+
         </script>
     </body>
 
