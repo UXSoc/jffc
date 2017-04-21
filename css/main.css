@@ -8555,6 +8555,12 @@ hr {
   padding: 0 14% !important;
   font-size: 0.8em !important; }
 
+.mobile-offcanvas {
+  font-size: 1.6em; }
+
+.mobile-nav-container {
+  margin: 30px; }
+
 .landing-date {
   color: #e65cd7;
   font-size: 1.2em; }
