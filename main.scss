@@ -249,6 +249,69 @@ hr{
     padding-top: 40px;
 }
 
+.schedule-line{
+    width: 4px;
+    height: 530px;
+    background: #ff007b;
+}
+
+.schedule-circle{
+    width: 24px;
+    height: 24px;
+    background: white;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin-top: -530px;
+    margin-left: -10px;
+}
+
+.schedule-timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 4px;
+    margin: 0 auto;
+    padding-top: 40px;
+    background: #ff007b;
+}
+
+.schedule-timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+}
+
+.schedule-timeline ul li div::after {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    left: 45px;
+}
+
+.schedule-timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #F45B69;
+}
+ 
+.schedule-timeline ul li div::after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
 .schedule-header{
     font-size: 2.6em;
     padding: 0;
@@ -271,8 +334,12 @@ hr{
     font-weight: bold;
 }
 
+.timeline-container{
+    margin: 30px 0 !important;
+}
+
 .timeline-text-container{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .timeline-header{
@@ -281,7 +348,6 @@ hr{
 
 .timeline-period{
     font-size: 1.3em;
-    margin-bottom: 20px;
 }
 
 .timeline-circle{
