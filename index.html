@@ -16,8 +16,9 @@
                 <ul class="uk-navbar-nav">
                     <!--<a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>            -->
                     <a class="uk-navbar-item uk-logo uk-visible@l" href="#landing" uk-scroll> <img class="nav-logo" src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
+                    <a class="uk-navbar-item uk-logo uk-hidden@s" href="#landing" uk-scroll> <img class="nav-logo-mobile" src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
                 </ul>
-                <ul class="uk-navbar-nav uk-hidden@l" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+                <ul class="uk-navbar-nav uk-hidden@l uk-visible@s" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
                     <li><a href="#about-section" uk-scroll><span>About</span></a></li>
                     <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
                     <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
@@ -36,36 +37,36 @@
                     <li><a href="#contact-section" uk-scroll><span>Contact us</span></a></li>
                 </ul>
             </div>
-            <div class="uk-navbar-right " style="padding-right: 20px">
-                <ul class="uk-navbar-nav uk-visible@m">
-                    <a class="uk-button uk-button-primary" href="http://bit.ly/JFFC2017"><span>Get Tickets</span></a>
+            <div class="uk-navbar-right" style="padding-right: 20px">
+                <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>
+                <ul class="uk-navbar-nav">
+                    <a class="uk-button uk-button-primary uk-visible@m" href="http://bit.ly/JFFC2017"><span>Get Tickets</span></a>
                 </ul>
             </div>
 
             <div id="mobile-nav" uk-offcanvas>
-                <div class="uk-offcanvas-bar">
+                <div class="uk-offcanvas-bar mobile-offcanvas">
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
 
                     <div class="uk-container uk-text-center">
-                        <br>
                         <div class="uk-child-width-expand@s uk-grid-small uk-grid-match" uk-grid>
-                            <div class="uk-width-1-1@s mobile-nav-container">
-                                <a onclick="scrollToDiv('#about-section')">About</a><br>
+                            <div class="uk-width-1-1 mobile-nav-container">
+                                <a href="#about-section" uk-scroll>About</a>
                             </div>
-                            <div class="uk-width-1-1@s mobile-nav-container">
-                                <a onclick="scrollToDiv('#speakers-section')">Speakers</a><br>
+                            <div class="uk-width-1-1 mobile-nav-container">
+                                <a href="#speakers-section" uk-scroll>Speakers</a>
                             </div>
-                            <div class="uk-width-1-1@s mobile-nav-container">
-                                <a onclick="scrollToDiv('#schedule-section')">Schedule</a><br>
+                            <div class="uk-width-1-1 mobile-nav-container">
+                                <a href="#schedule-section" uk-scroll>Schedule</a>
                             </div>
-                            <div class="uk-width-1-1@s mobile-nav-container">
-                                <a onclick="scrollToDiv('#venue-section')">Venue</a><br>
+                            <div class="uk-width-1-1 mobile-nav-container">
+                                <a href="#venue-section" uk-scroll>Venue</a>
                             </div>
-                            <div class="uk-width-1-1@s mobile-nav-container">
-                                <a onclick="scrollToDiv('#faqs-section')">FAQs</a><br>
+                            <div class="uk-width-1-1 mobile-nav-container">
+                                <a href="#faqs-section" uk-scroll>FAQs</a>
                             </div>
-                            <div class="uk-width-1-1@s mobile-nav-container">
-                                <a onclick="scrollToDiv('#contact-section')">Contact us</a><br>
+                            <div class="uk-width-1-1 mobile-nav-container">
+                                <a href="#contact-section" uk-scroll>Contact us</a>
                             </div>
                         </div>   
                     </div>

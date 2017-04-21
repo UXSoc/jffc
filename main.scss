@@ -170,9 +170,18 @@ hr{
     height: auto;
 }
 
+.nav-logo-mobile{
+    width: 120px;
+    height: auto;
+}
+
 .nav-mobile > li > a{
     padding: 0 14% !important;
     font-size: 0.8em !important;
+}
+
+.mobile-offcanvas{
+    //background: $background-color
 }
 
 //===========================
