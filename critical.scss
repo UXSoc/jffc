@@ -8,14 +8,6 @@ $background-color: #181743;
 $button-primary-background: #f70170;
 
 //===========================
-// Fonts
-//===========================
-@font-face {
-    font-family: "Athelas";
-    src:url("../fonts/Athelas.ttc");
-}
-
-//===========================
 // Grid
 //===========================
 $grid-large-gutter-horizontal-l: 300px;
@@ -88,16 +80,22 @@ $navbar-item-color: white;
 }
 
 
-// Import UIkit.
-@import "uikit/src/scss/uikit-theme.scss";
+// Import Critical UIKit.
+@import "uikit/src/scss/components/grid.scss";
+@import "uikit/src/scss/components/navbar.scss";
+@import "uikit/src/scss/components/offcanvas.scss";
+@import "uikit/src/scss/components/button.scss";
+
+@import "uikit/src/scss/components/flex.scss";
+@import "uikit/src/scss/components/visibility.scss";
 
 
 //Custom CSS
 @import "uikit/src/scss/custom/global.scss";
 @import "uikit/src/scss/custom/navbar.scss";
 @import "uikit/src/scss/custom/landing.scss";
-@import "uikit/src/scss/custom/about.scss";
-@import "uikit/src/scss/custom/speakers.scss";
-@import "uikit/src/scss/custom/schedule.scss";
-@import "uikit/src/scss/custom/sponsors.scss";
-@import "uikit/src/scss/custom/footer.scss";
+// @import "uikit/src/scss/custom/about.scss";
+// @import "uikit/src/scss/custom/speakers.scss";
+// @import "uikit/src/scss/custom/schedule.scss";
+// @import "uikit/src/scss/custom/sponsors.scss";
+// @import "uikit/src/scss/custom/footer.scss";
