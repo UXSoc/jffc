@@ -8,568 +8,69 @@
 
         <title>JFFC</title>
 
-        <style type="text/css">
-            @font-face {
-              font-family: 'Work Sans';
-              font-style: normal;
-              font-weight: 400;
-              src: local(Work Sans), local(WorkSans-Regular), url(https://fonts.gstatic.com/s/worksans/v2/ElUAY9q6T0Ayx4zWzW63VKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-            }
-
-            @font-face {
-              font-family: 'Work Sans';
-              font-style: normal;
-              font-weight: 500;
-              src: local(Work Sans Medium), local(WorkSans-Medium), url(https://fonts.gstatic.com/s/worksans/v2/Nbre-U_bp6Xktt8cpgwaJInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
-            }
-
-            @font-face {
-              font-family: Athelas;
-              src: url(fonts/Athelas.ttc);
-            }
-
-            html {
-              font-family: 'Work Sans', sans-serif;
-              font-size: 16px;
-              font-weight: normal;
-              line-height: 1.5;
-              background-color: rgb(255, 255, 255);
-              color: rgb(102, 102, 102);
-              background-position: initial initial;
-              background-repeat: initial initial;
-            }
-
-            body {
-              margin: 0px;
-            }
-
-            a {
-              background-color: transparent;
-            }
-
-            a {
-              color: rgb(30, 135, 240);
-              text-decoration: none;
-            }
-
-            img {
-              vertical-align: middle;
-            }
-
-            img {
-              max-width: 100%;
-              height: auto;
-              box-sizing: border-box;
-            }
-
-            img {
-              border-style: none;
-            }
-
-            ul {
-              margin: 0px 0px 20px;
-            }
-
-            * + ul {
-              margin-top: 20px;
-            }
-
-            h1 {
-              margin: 0px 0px 20px;
-              font-family: Athelas, serif;
-              font-weight: normal;
-              color: rgb(51, 51, 51);
-              text-transform: none;
-            }
-
-            * + h1 {
-              margin-top: 40px;
-            }
-
-            h1 {
-              font-size: 2.625rem;
-              line-height: 1.2;
-            }
-
-            ul {
-              padding-left: 30px;
-            }
-
-            hr {
-              box-sizing: content-box;
-              height: 0px;
-              overflow: visible;
-              margin: 0px 0px 20px;
-              border-width: 1px 0px 0px;
-              border-top-style: solid;
-              border-top-color: rgb(229, 229, 229);
-            }
-
-            * + hr {
-              margin-top: 20px;
-            }
-
-            nav {
-              display: block;
-            }
-
-            .uk-button {
-              margin: 0px;
-              border: none;
-              overflow: visible;
-              font-family: inherit;
-              font-style: inherit;
-              font-variant: inherit;
-              font-weight: inherit;
-              color: inherit;
-              text-transform: none;
-              display: inline-block;
-              box-sizing: border-box;
-              padding: 0px 30px;
-              vertical-align: middle;
-              line-height: 38px;
-              text-align: center;
-              text-decoration: none;
-              font-size: 1.1em;
-              width: 180px;
-              border-top-left-radius: 40px;
-              border-top-right-radius: 40px;
-              border-bottom-right-radius: 40px;
-              border-bottom-left-radius: 40px;
-            }
-
-            .uk-button-primary {
-              background-color: rgb(247, 1, 112);
-              color: rgb(255, 255, 255);
-              border: 1px solid transparent;
-            }
-
-            .uk-container {
-              box-sizing: content-box;
-              max-width: 1200px;
-              margin-left: auto;
-              margin-right: auto;
-              padding-left: 15px;
-              padding-right: 15px;
-            }
-
-            @media (min-width: 640px) {
-              .uk-container {
-                padding-left: 30px;
-                padding-right: 30px;
-              }
-            }
-
-            @media (min-width: 960px) {
-              .uk-container {
-                padding-left: 40px;
-                padding-right: 40px;
-              }
-            }
-
-            .uk-container::before,
-            .uk-container::after {
-              content: '';
-              display: table;
-            }
-
-            .uk-container::after {
-              clear: both;
-            }
-
-            .uk-container > :last-child {
-              margin-bottom: 0px;
-            }
-
-            .uk-grid-small {
-              margin-left: -15px;
-            }
-
-            .uk-grid-small > * {
-              padding-left: 15px;
-            }
-
-            .uk-grid-match > * {
-              display: -webkit-flex;
-              -webkit-flex-wrap: wrap;
-            }
-
-            .uk-grid-match > * > :not([class*="uk-width"]) {
-              box-sizing: border-box;
-              width: 100%;
-              -webkit-flex: 1 1 auto;
-            }
-
-            .uk-overlay {
-              padding: 30px;
-            }
-
-            .uk-overlay > :last-child {
-              margin-bottom: 0px;
-            }
-
-            .uk-navbar-container:not(.uk-navbar-transparent) {
-              background-color: rgb(24, 23, 67);
-              background-position: initial initial;
-              background-repeat: initial initial;
-            }
-
-            .uk-navbar-left,
-            .uk-navbar-right,
-            .uk-navbar-center {
-              display: -webkit-flex;
-              -webkit-align-items: center;
-            }
-
-            .uk-navbar-right {
-              margin-left: auto;
-            }
-
-            .uk-navbar-center:not(:only-child) {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              z-index: 990;
-            }
-
-            .uk-navbar-center:not(:only-child) .uk-navbar-nav > li > a {
-              white-space: nowrap;
-            }
-
-            .uk-navbar-nav {
-              display: -webkit-flex;
-              margin: 0px;
-              padding: 0px;
-              list-style: none;
-            }
-
-            .uk-navbar-left,
-            .uk-navbar-right {
-              -webkit-flex-wrap: wrap;
-            }
-
-            .uk-navbar-nav > li > a,
-            .uk-navbar-item,
-            .uk-navbar-toggle {
-              display: -webkit-flex;
-              -webkit-justify-content: center;
-              -webkit-align-items: center;
-              box-sizing: border-box;
-              height: 80px;
-              padding: 0px 30px;
-              font-size: 1em;
-              font-family: 'Work Sans';
-              text-decoration: none;
-            }
-
-            .uk-navbar-nav > li > a {
-              color: rgb(255, 255, 255);
-              text-transform: uppercase;
-            }
-
-            .uk-navbar-item {
-              color: rgb(255, 255, 255);
-            }
-
-            .uk-navbar-toggle {
-              color: rgb(153, 153, 153);
-            }
-
-            .uk-offcanvas-bar {
-              position: absolute;
-              top: 0px;
-              bottom: 0px;
-              left: 0px;
-              box-sizing: border-box;
-              width: 270px;
-              padding: 20px;
-              background-color: rgb(34, 34, 34);
-              overflow-y: auto;
-              -webkit-transform: translateX(-100%);
-              background-position: initial initial;
-              background-repeat: initial initial;
-            }
-
-            @media (min-width: 960px) {
-              .uk-offcanvas-bar {
-                width: 350px;
-                padding: 40px;
-              }
-            }
-
-            .uk-offcanvas-close {
-              position: absolute;
-              z-index: 1000;
-              top: 20px;
-              right: 20px;
-              padding: 5px;
-            }
-
-            [class*="uk-child-width"] > * {
-              box-sizing: border-box;
-              width: 100%;
-            }
-
-            .uk-child-width-1-3 > * {
-              width: calc((100% * 1) / 3.001);
-            }
-
-            @media (min-width: 640px) {
-              .uk-child-width-expand\@s > * {
-                width: 1px;
-              }
-            }
-
-            [class*="uk-width"] {
-              box-sizing: border-box;
-              width: 100%;
-              max-width: 100%;
-            }
-
-            @media (min-width: 640px) {
-              .uk-width-1-2\@s {
-                width: 50%;
-              }
-            }
-
-            @media (min-width: 960px) {
-              .uk-width-1-2\@m {
-                width: 50%;
-              }
-
-              .uk-width-2-5\@m {
-                width: 40%;
-              }
-
-              .uk-width-3-5\@m {
-                width: 60%;
-              }
-            }
-
-            .uk-text-left {
-              text-align: left !important;
-            }
-
-            .uk-text-center {
-              text-align: center !important;
-            }
-
-            .uk-cover-container {
-              overflow: hidden;
-              position: relative;
-            }
-
-            .uk-logo {
-              font-size: 1.5rem;
-              font-family: 'Work Sans', sans-serif;
-              color: rgb(255, 255, 255);
-              text-decoration: none;
-            }
-
-            .uk-flex {
-              display: -webkit-flex;
-            }
-
-            .uk-flex::before,
-            .uk-flex::after {
-              display: none;
-            }
-
-            .uk-flex-left {
-              -webkit-justify-content: flex-start;
-            }
-
-            .uk-flex-center {
-              -webkit-justify-content: center;
-            }
-
-            .uk-flex-middle {
-              -webkit-align-items: center;
-            }
-
-            .uk-position-cover {
-              position: absolute;
-              top: 0px;
-              bottom: 0px;
-              left: 0px;
-              right: 0px;
-            }
-
-            @media (min-width: 640px) {
-              .uk-hidden\@s {
-                display: none !important;
-              }
-            }
-
-            @media (min-width: 960px) {
-              .uk-hidden\@m {
-                display: none !important;
-              }
-            }
-
-            @media (min-width: 1200px) {
-              .uk-hidden\@l {
-                display: none !important;
-              }
-            }
-
-            @media (max-width: 959px) {
-              .uk-visible\@m {
-                display: none !important;
-              }
-            }
-
-            @media (max-width: 1199px) {
-              .uk-visible\@l {
-                display: none !important;
-              }
-            }
-
-            .uk-offcanvas-bar {
-              color: rgba(255, 255, 255, 0.701961);
-            }
-
-            .uk-offcanvas-bar a {
-              color: rgb(255, 255, 255);
-            }
-
-            .footer-hr {
-              background-image: linear-gradient(to right, rgb(153, 153, 153), rgba(255, 0, 0, 0));
-              background-position: initial initial;
-              background-repeat: initial initial;
-            }
-
-            @media screen and (max-width: 640px) {
-              .footer-subtitle {
-                font-size: 0.7em;
-              }
-            }
-
-            @media screen and (max-width: 640px) {
-              .footer-header {
-                font-size: 2.3em;
-                margin-top: 10px;
-              }
-            }
-
-            .footer-button-container {
-              padding-top: 20px;
-            }
-
-            .footer-button-div {
-              padding-right: 12px;
-            }
-
-            .footer-button-mobile {
-              font-size: 1em;
-              width: 150px;
-              height: auto;
-            }
-
-            .footer-social-icon {
-              max-width: 48px;
-              padding-left: 0px;
-              padding-right: 12px;
-            }
-
-            @media screen and (min-width: 960px) {
-              .footer-social-icon {
-                max-width: 72px;
-                padding-right: 48px;
-                padding-top: 36px;
-              }
-            }
-
-            .footer-presenter-container {
-              padding-top: 120px;
-            }
-
-            @media screen and (max-width: 640px) {
-              .footer-presenter-container {
-                padding-top: 60px;
-              }
-            }
-
-            .footer-made-by {
-              margin-top: 120px;
-            }
-
-            @media screen and (max-width: 640px) {
-              .footer-made-by {
-                font-size: 0.9em;
-              }
-            }
-
-        </style>
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet"></noscript>
-
-        <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="css/main.css"></noscript>
-        <script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
-
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/main.css"/>
 
         <link rel="icon" sizes="192x192" href="img/jffc-logo/icon.png">
     </head>
 
     <body>
-        <nav class="uk-navbar-container" uk-navbar="" uk-sticky="bottom: #offset">
+        <nav class="uk-navbar-container" uk-navbar uk-sticky="bottom: #offset">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <!--<a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>            -->
-                    <a class="uk-navbar-item uk-logo uk-visible@l" href="#landing" uk-scroll=""> <img class="nav-logo" src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"></a>
-                    <a class="uk-navbar-item uk-logo uk-hidden@m" href="#landing" uk-scroll=""> <img class="nav-logo-mobile" src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"></a>
+                    <a class="uk-navbar-item uk-logo uk-visible@l" href="#landing" uk-scroll> <img class="nav-logo" src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
+                    <a class="uk-navbar-item uk-logo uk-hidden@m" href="#landing" uk-scroll> <img class="nav-logo-mobile" src="img/jffc-logo/navbar-logo.png" alt="JFFC 2017"/></a>
                 </ul>
                 <ul class="uk-navbar-nav uk-hidden@l uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
-                    <li><a href="#about-section" uk-scroll=""><span>About</span></a></li>
-                    <li><a href="#speakers-section" uk-scroll=""><span>Speakers</span></a></li>
-                    <li><a href="#schedule-section" uk-scroll=""><span>Schedule</span></a></li>
-                    <li><a href="#venue-section" uk-scroll=""><span>Venue</span></a></li>
-                    <li><a href="#faqs-section" uk-scroll=""><span>FAQs</span></a></li>
-                    <li><a href="#contact-section" uk-scroll=""><span>Contact us</span></a></li>
+                    <li><a href="#about-section" uk-scroll><span>About</span></a></li>
+                    <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
+                    <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
+                    <li><a href="#venue-section" uk-scroll><span>Venue</span></a></li>
+                    <li><a href="#faqs-section" uk-scroll><span>FAQs</span></a></li>
+                    <li><a href="#contact-section" uk-scroll><span>Contact us</span></a></li>
                 </ul>
             </div>
             <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav uk-visible@l" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
-                    <li><a href="#about-section" uk-scroll=""><span>About</span></a></li>
-                    <li><a href="#speakers-section" uk-scroll=""><span>Speakers</span></a></li>
-                    <li><a href="#schedule-section" uk-scroll=""><span>Schedule</span></a></li>
-                    <li><a href="#venue-section" uk-scroll=""><span>Venue</span></a></li>
-                    <li><a href="#faqs-section" uk-scroll=""><span>FAQs</span></a></li>
-                    <li><a href="#contact-section" uk-scroll=""><span>Contact us</span></a></li>
+                    <li><a href="#about-section" uk-scroll><span>About</span></a></li>
+                    <li><a href="#speakers-section" uk-scroll><span>Speakers</span></a></li>
+                    <li><a href="#schedule-section" uk-scroll><span>Schedule</span></a></li>
+                    <li><a href="#venue-section" uk-scroll><span>Venue</span></a></li>
+                    <li><a href="#faqs-section" uk-scroll><span>FAQs</span></a></li>
+                    <li><a href="#contact-section" uk-scroll><span>Contact us</span></a></li>
                 </ul>
             </div>
             <div class="uk-navbar-right" style="padding-right: 20px">
-                <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon="" href="#mobile-nav" uk-toggle=""></a>
+                <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>
                 <ul class="uk-navbar-nav">
                     <a class="uk-button uk-button-primary uk-visible@m" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
                 </ul>
             </div>
 
-            <div id="mobile-nav" uk-offcanvas="">
+            <div id="mobile-nav" uk-offcanvas>
                 <div class="uk-offcanvas-bar mobile-offcanvas uk-flex uk-flex-middle">
-                    <button class="uk-offcanvas-close" type="button" uk-close=""></button>
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
 
                     <div class="uk-container uk-text-center ">
-                        <div class="uk-child-width-expand@s uk-grid-small uk-grid-match" uk-grid="">
+                        <div class="uk-child-width-expand@s uk-grid-small uk-grid-match" uk-grid>
                             <div class="uk-width-1-1 mobile-nav-container">
-                                <a href="#about-section" uk-scroll="">About</a>
+                                <a href="#about-section" uk-scroll>About</a>
                             </div>
                             <div class="uk-width-1-1 mobile-nav-container">
-                                <a href="#speakers-section" uk-scroll="">Speakers</a>
+                                <a href="#speakers-section" uk-scroll>Speakers</a>
                             </div>
                             <div class="uk-width-1-1 mobile-nav-container">
-                                <a href="#schedule-section" uk-scroll="">Schedule</a>
+                                <a href="#schedule-section" uk-scroll>Schedule</a>
                             </div>
                             <div class="uk-width-1-1 mobile-nav-container">
-                                <a href="#venue-section" uk-scroll="">Venue</a>
+                                <a href="#venue-section" uk-scroll>Venue</a>
                             </div>
                             <div class="uk-width-1-1 mobile-nav-container">
-                                <a href="#faqs-section" uk-scroll="">FAQs</a>
+                                <a href="#faqs-section" uk-scroll>FAQs</a>
                             </div>
                             <div class="uk-width-1-1 mobile-nav-container">
-                                <a href="#contact-section" uk-scroll="">Contact us</a>
+                                <a href="#contact-section" uk-scroll>Contact us</a>
                             </div>
                         </div>   
                     </div>
@@ -580,7 +81,7 @@
         <div class="uk-container main-container">
 
             <!--Cover-->
-            <div class="uk-cover-container uk-flex-middle" uk-height-viewport="offset-top: true" uk-grid="">
+            <div class="uk-cover-container uk-flex-middle" uk-height-viewport="offset-top: true" uk-grid>
                 <!--<img src="img/landing-background.png" uk-cover/>-->
                 <div class="uk-width-3-5@m uk-text-left">
                     <span class="subtitle">JFFC 2017</span>
@@ -596,14 +97,14 @@
                     <a class="uk-button uk-button-primary ghost-button" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
                 </div>
                 <div class="uk-width-2-5@m uk-flex uk-flex-cente uk-visible@m">
-                    <div><img src="img/hand.png" alt="JFFC 2017"></div>
+                    <div><img src="img/hand.png" alt="JFFC 2017"/></div>
                 </div>
             </div>
 
             <!--About-->
             <div class="uk-flex uk-flex-center">
                 <div id="about-section" class="uk-width-1-2@s uk-text-center section-container">
-                    <img src="img/jffc-logo/about-logo.png" alt="ABOUT">
+                    <img src="img/jffc-logo/about-logo.png" alt="ABOUT"/>
                     <h1 class="about-header">
                         Uncover the secrets of
                         great web design
@@ -614,9 +115,9 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-flex-middle about-container" uk-grid="">
+            <div class="uk-flex-middle about-container" uk-grid>
                 <div class="uk-width-3-5@m uk-text-center">
-                    <img src="img/conference.png" alt="CONFERENCE">
+                    <img src="img/conference.png" alt="CONFERENCE"/>
                 </div>
                 <div class="uk-width-2-5@m uk-text-left">
                     <h1>Conference</h1>
@@ -632,7 +133,7 @@
                     </p>
                 </div>
             </div>
-            <div class="uk-flex-middle about-container" uk-grid="">
+            <div class="uk-flex-middle about-container" uk-grid>
                 <div class="uk-width-2-5@m uk-text-left">
                     <h1>Workshop</h1>
                     <span class="about-date">June 11</span>
@@ -646,7 +147,7 @@
                     </p>
                 </div>
                 <div class="uk-width-3-5@m uk-text-center">
-                    <img src="img/workshop.png" alt="WORKSHOP">
+                    <img src="img/workshop.png" alt="WORKSHOP"/>
                 </div>
             </div>
 
@@ -663,16 +164,16 @@
                 </div>
             </div>
 
-            <div class="uk-grid-medium " uk-grid="">
+            <div class="uk-grid-medium " uk-grid>
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/andre.png" alt="Andre Tacuyan">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/andre.png" alt="Andre Tacuyan"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Andre<br>Tacuyan</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="http://www.andretacuyan.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://twitter.com/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="http://www.andretacuyan.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -687,13 +188,13 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/niaw.png" alt="Niaw de Leon">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/niaw.png" alt="Niaw de Leon"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Niaw<br>de Leon</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="http://niawdeleon.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://twitter.com/niawdeleon" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://medium.com/@niawdeleon" target="_blank" rel="noopener"><img src="img/social-media-icons/medium.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="http://niawdeleon.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/niawdeleon" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://medium.com/@niawdeleon" target="_blank" rel="noopener"><img src="img/social-media-icons/medium.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -707,13 +208,13 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/csj.png" alt="Christian San Jose">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/csj.png" alt="Christian San Jose"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Christian<br>San Jose</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="http://christiansanjose.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://twitter.com/csj89?lang=en" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/christiansanjose" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="http://christiansanjose.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/csj89?lang=en" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/christiansanjose" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -728,13 +229,13 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/birdie.png" alt="Birdie Salva">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/birdie.png" alt="Birdie Salva"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Birdie<br>Salva</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://medium.com/@birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/medium.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="https://medium.com/@birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/medium.png" alt="web"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -748,12 +249,12 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/edmond.png" alt="Edmond Gozo">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/edmond.png" alt="Edmond Gozo"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Edmond<br>Gozo</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://twitter.com/edmondgozo" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/edmondgozo" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/edmondgozo" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/edmondgozo" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -766,12 +267,12 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/troy.png" alt="Troy Sitosta">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/troy.png" alt="Troy Sitosta"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Troy<br>Sitosta</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://dribbble.com/troysitosta" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/troy-sitosta-13586532" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="https://dribbble.com/troysitosta" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/troy-sitosta-13586532" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -784,13 +285,13 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/ely.png" alt="Ely Apao">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/ely.png" alt="Ely Apao"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">Ely<br>Apao</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://www.quora.com/profile/Ely-Apao" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://twitter.com/elyapao" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/jozzua" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.quora.com/profile/Ely-Apao" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/elyapao" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/jozzua" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -803,12 +304,12 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/tj.png" alt="TJ Monserrat">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                    <img src="img/speakers/tj.png" alt="TJ Monserrat"/>
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid>
                         <h1 class="speaker-header">TJ<br>Monserrat</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://github.com/tjmonsi" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/toni-jan-keith-monserrat-42975341" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="https://github.com/tjmonsi" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"/></a></div>
+                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/toni-jan-keith-monserrat-42975341" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"/></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -837,9 +338,9 @@
                 </div>
             </div>
 
-            <div class="schedule-container" uk="" grid="">
+            <div class="schedule-container" uk grid>
                 <div class="uk-width-1-2@m uk-text-left">
-                    <div uk-grid="">
+                    <div uk-grid>
                         <div class="uk-width-1-3 uk-flex uk-flex-right">
                             <div>
                                 <span class="schedule-day">DAY</span><br>
@@ -853,9 +354,9 @@
                     </div>
                 </div>
             </div>
-            <div class="schedule-container" uk-grid="">
+            <div class="schedule-container" uk-grid>
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-right@s uk-flex-center">
-                    <div class="uk-width-2-3" uk-grid="">
+                    <div class="uk-width-2-3" uk-grid>
                         <div class="timeline-period uk-width-1-1">AM</div>
                         <div class="schedule-timeline">
                             <ul>
@@ -898,7 +399,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-right@s uk-flex-center">
-                    <div class="uk-width-2-3" uk-grid="">
+                    <div class="uk-width-2-3" uk-grid>
                         <div class="timeline-period uk-width-1-1">PM</div>
                         <div class="schedule-timeline">
                             <ul>
@@ -938,9 +439,9 @@
                 </div>
             </div>
 
-            <div class="schedule-container" uk="" grid="">
+            <div class="schedule-container" uk grid>
                 <div class="uk-width-1-2@m uk-text-left">
-                    <div uk-grid="">
+                    <div uk-grid>
                         <div class="uk-width-1-3 uk-flex uk-flex-right">
                             <div>
                                 <span class="schedule-day">DAY</span><br>
@@ -954,9 +455,9 @@
                     </div>
                 </div>
             </div>
-            <div class="schedule-container uk-flex uk-flex-center" uk-grid="">
+            <div class="schedule-container uk-flex uk-flex-center" uk-grid>
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-right@s uk-flex-center">
-                    <div class="uk-width-2-3" uk-grid="">
+                    <div class="uk-width-2-3" uk-grid>
                         <div class="schedule-timeline">
                             <ul>
                                 <li>
@@ -994,7 +495,7 @@
                     </div>
                 </div>
 
-                <div class="uk-width-1-2@m uk-child-width-1-1 uk-text-left" uk-grid="">
+                <div class="uk-width-1-2@m uk-child-width-1-1 uk-text-left" uk-grid>
                     <div class="uk-flex uk-flex-center">
                         <div class="uk-width-2-3@s workshop-box-container">
                             <div class="workshop-box">
@@ -1037,7 +538,7 @@
 
 
             <!--Venue-->
-            <div id="venue-section" class="section-container" uk-grid="">
+            <div id="venue-section" class="section-container" uk-grid>
                 <div class="uk-width-1-1@m uk-text-center">
                     <span class="subtitle">VENUE</span>
                     <h1>To Be<br>Announced</h1>
@@ -1058,7 +559,7 @@
 
 
             <!--Get Tickets-->
-            <div id="ticket-section" class="section-container" uk-grid="">
+            <div id="ticket-section" class="section-container" uk-grid>
                 <div class="uk-width-1-1@m uk-text-center">
                     <span class="subtitle">GET TICKETS</span>
                     <h1>Claim your wand</h1>
@@ -1066,7 +567,7 @@
                         <hr class="hr-small uk-visible@s">
                         <hr class="hr-large uk-hidden@s">
                     </div>
-                    <img src="img/price-list.png" alt="PRICE LIST"><br>
+                    <img src="img/price-list.png" alt="PRICE LIST"/><br>
                     <a class="uk-button uk-button-primary" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
                 </div>
             </div>
@@ -1083,7 +584,7 @@
                 </div>
             </div>
 
-            <div class="uk-grid-large" uk-grid="">
+            <div class="uk-grid-large" uk-grid>
                 <div class="uk-width-1-2@m uk-text-left">
                     <h2>
                         How many tickets can I order at 
@@ -1237,22 +738,22 @@
                 </div>
             </div>
 
-            <div class="uk-grid-medium" uk-grid="">
+            <div class="uk-grid-medium" uk-grid>
                 <div class="uk-width-1-2@m uk-text-center">
-                    <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="SKETCH"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/invision.png" alt="INVISION"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/z.com.png" alt="Z.COM"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/yellow-prints.png" alt="YELLOW PRINTS"></div>
+                    <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="SKETCH"/></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/invision.png" alt="INVISION"/></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/z.com.png" alt="Z.COM"/></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/yellow-prints.png" alt="YELLOW PRINTS"/></div>
                     </div>
                 </div>
                 <div class="sponsors-second-col uk-width-1-2@m uk-text-center">
-                    <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/rosenfeld.png" alt="ROSENFELD"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/ctc.jpg" alt="CLICK THE CITY"></div>
-                        <div class="uk-child-width-1-2 sponsors-logo" uk-grid="">
-                            <div class="sponsors-logo"><img src="img/sponsor-logos/when-in-manila.jpg" alt="WHEN IN MANILA"></div>
-                            <div class="sponsors-logo"><img src="img/sponsor-logos/512.png" alt="512"></div>
+                    <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/rosenfeld.png" alt="ROSENFELD"/></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/ctc.jpg" alt="CLICK THE CITY"/></div>
+                        <div class="uk-child-width-1-2 sponsors-logo" uk-grid>
+                            <div class="sponsors-logo"><img src="img/sponsor-logos/when-in-manila.jpg" alt="WHEN IN MANILA"/></div>
+                            <div class="sponsors-logo"><img src="img/sponsor-logos/512.png" alt="512"/></div>
                         </div>
                     </div>
                 </div>
@@ -1262,9 +763,9 @@
 
         <!--Footer / Contact Us-->
         <div id="contact-section" class="uk-cover-container uk-height-large section-container">
-            <img src="img/footer.png" alt="" uk-cover="">
+            <img src="img/footer.png" alt="" uk-cover>
 
-            <div class="uk-position-medium uk-position-cover uk-overlay uk-text-left uk-visible@m uk-flex uk-flex-center uk-grid-medium footer-bottom-container" uk-grid="">
+            <div class="uk-position-medium uk-position-cover uk-overlay uk-text-left uk-visible@m uk-flex uk-flex-center uk-grid-medium footer-bottom-container" uk-grid>
                 <div class="uk-width-1-2@m">
                     <span class="subtitle footer-subtitle">CONTACT US</span>
                     <h1 class="footer-header">Have any questions?</h1>
@@ -1275,35 +776,35 @@
                 <div class="uk-width-1-2@m uk-child-width-1-1">
                     <div class="subtitle">FOLLOW US</div>
                     <div class="uk-flex uk-flex-left">
-                        <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"></a></div>
-                        <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
+                        <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"/></a></div>
+                        <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
                     </div>
-                    <div class="uk-child-width-1-3 footer-presenter-container" uk-grid="">
-                        <div><img src="img/presenter-logos/tw.png"></div>
-                        <div><img src="img/presenter-logos/uxsoc.png"></div>
-                        <div><img src="img/presenter-logos/pwdo.png"></div>
+                    <div class="uk-child-width-1-3 footer-presenter-container" uk-grid>
+                        <div><img src="img/presenter-logos/tw.png"/></div>
+                        <div><img src="img/presenter-logos/uxsoc.png"/></div>
+                        <div><img src="img/presenter-logos/pwdo.png"/></div>
                     </div>
                 </div>
                 
             </div>
 
             <!--Mobile Footer-->
-            <div class="uk-position-cover uk-overlay uk-text-left uk-hidden@m" uk-grid="">
+            <div class="uk-position-cover uk-overlay uk-text-left uk-hidden@m" uk-grid>
                 <div class="uk-width-1-2@m">
                     <span class="subtitle footer-subtitle">CONTACT US</span>
                     <h1 class="footer-header">Have any questions?</h1>
                     <hr class="footer-hr" width="50%">
 
-                    <div class="footer-button-container" uk-grid="">
+                    <div class="footer-button-container" uk-grid>
                         <div class="footer-button-div"><a class="uk-button uk-button-primary footer-button-mobile" href=""><span>Send an owl</span></a></div>
-                        <div class="uk-flex uk-flex-left" uk-grid="">
-                            <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"></a></div>
-                            <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
+                        <div class="uk-flex uk-flex-left" uk-grid>
+                            <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"/></a></div>
+                            <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"/></a></div>
                         </div>
-                        <div class="uk-child-width-1-3 footer-presenter-container" uk-grid="">
-                            <div><img src="img/presenter-logos/tw.png" alt="Tomasino Web"></div>
-                            <div><img src="img/presenter-logos/uxsoc.png" alt="User Experience Society"></div>
-                            <div><img src="img/presenter-logos/pwdo.png" class="Philippine Web Designers Association"></div>
+                        <div class="uk-child-width-1-3 footer-presenter-container" uk-grid>
+                            <div><img src="img/presenter-logos/tw.png" alt="Tomasino Web"/></div>
+                            <div><img src="img/presenter-logos/uxsoc.png" alt="User Experience Society"/></div>
+                            <div><img src="img/presenter-logos/pwdo.png" class="Philippine Web Designers Association"/></div>
                         </div>
                         <div class="footer-made-by">Passionately made by User Experience Society</div>
                     </div>
@@ -1311,7 +812,10 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous" defer>
         </script>
         <script src="js/uikit.min.js" defer></script>
     </body>
