@@ -1100,7 +1100,7 @@
                     <p>
                         You can only order one ticket per registration,
                         and yes you have to be
-                        a student to take part in this event
+                        a student to take part in this event.
                     </p>
 
                     <h2>
@@ -1112,7 +1112,7 @@
                         cancellation - [Order#] - [Name]. All
                         cancellations will be acknowledged and the
                         refund process will be coordinated
-                        accordingly
+                        accordingly.
                     </p>
                     <p>FOR BLIND AND EARLY BIRD:</p>
                     <p>
@@ -1215,8 +1215,7 @@
                     </h2>
                     <p>
                         There is no specific dress code for JFFC.
-                        Smart casual attire, however, is highly recom
-                        mended.
+                        Smart casual attire, however, is highly recommended.
                     </p>
 
                     <h2>
@@ -1226,7 +1225,7 @@
                     </h2>
                     <p>
                         For all concerns, please don't hesitate to send
-                        us an email at helpdesk@jffc.asia
+                        us an email at helpdesk@jffc.asia.
                     </p>
                 </div>
             </div>
@@ -1247,24 +1246,48 @@
             <div class="uk-grid-medium" uk-grid="">
                 <div class="uk-width-1-2@m uk-text-center">
                     <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="SKETCH"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/invision.png" alt="INVISION"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/z.com.png" alt="Z.COM"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/yellow-prints.png" alt="YELLOW PRINTS"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/axure.jpg" alt="Axure"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="Sketch"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/invision.png" alt="Invision"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/z.com.png" alt="z.com"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/yellow-prints.png" alt="Yellow Pints"></div>
                     </div>
                 </div>
                 <div class="sponsors-second-col uk-width-1-2@m uk-text-center">
                     <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/rosenfeld.png" alt="ROSENFELD"></div>
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/ctc.jpg" alt="CLICK THE CITY"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/comfort-sole.png" alt="A Book Apart"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/rosenfeld.png" alt="Rosenfeld"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/ctc.jpg" alt="Click the City"></div>
                         <div class="uk-child-width-1-2 sponsors-logo" uk-grid="">
-                            <div class="sponsors-logo"><img src="img/sponsor-logos/when-in-manila.jpg" alt="WHEN IN MANILA"></div>
-                            <div class="sponsors-logo"><img src="img/sponsor-logos/512.png" alt="512"></div>
+                            <div class="sponsors-logo"><img src="img/sponsor-logos/when-in-manila.jpg" alt="When in Manila"></div>
+                            <div class="sponsors-logo"><img src="img/sponsor-logos/framer.png" alt="Framer"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        <!--Contact Us Modal-->
+        <div id="contact-modal" uk-modal="center: true">
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h1 class="uk-modal-title">Send an Owl</h1>
+                <form class="uk-grid-small" id="personal-info-form" uk-grid >
+                    <div class="uk-width-1-1">
+                        <label class="uk-form-label">Name</label>
+                        <input name="name" class="uk-input" type="text" placeholder="">
+                    </div>
+                    <div class="uk-width-1-1">
+                        <label class="uk-form-label">Email</label>
+                        <input name="email" class="uk-input" type="email" placeholder="">
+                    </div>
+                    <div class="uk-width-1-1">
+                        <label class="uk-form-label">Message</label>
+                        <textarea name="message" class="uk-textarea" rows="5" placeholder=""></textarea>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <!--Footer / Contact Us-->
@@ -1276,7 +1299,7 @@
                     <span class="subtitle footer-subtitle">CONTACT US</span>
                     <h1 class="footer-header">Have any questions?</h1>
                     <hr class="footer-hr uk-visible@s" width="25%">
-                    <a class="uk-button uk-button-primary uk-visible@s" href=""><span>Send an owl</span></a>
+                    <a class="uk-button uk-button-primary uk-visible@s" href="#contact-modal" uk-toggle><span>Send an owl</span></a>
                     <div class="footer-made-by">Passionately made by User Experience Society</div>
                 </div>
                 <div class="uk-width-1-2@m uk-child-width-1-1">
@@ -1302,7 +1325,7 @@
                     <hr class="footer-hr" width="50%">
 
                     <div class="footer-button-container" uk-grid="">
-                        <div class="footer-button-div"><a class="uk-button uk-button-primary footer-button-mobile" href=""><span>Send an owl</span></a></div>
+                        <div class="footer-button-div"><a class="uk-button uk-button-primary footer-button-mobile" href="#contact-modal" uk-toggle><span>Send an owl</span></a></div>
                         <div class="uk-flex uk-flex-left" uk-grid="">
                             <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"></a></div>
                             <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>

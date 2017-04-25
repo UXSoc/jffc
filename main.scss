@@ -87,6 +87,13 @@ $navbar-item-color: white;
     border-radius: 40px;
 }
 
+//===========================
+// Footer
+//===========================
+@mixin hook-modal-title(){
+    color: $background-color !important;
+}
+
 
 // Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
