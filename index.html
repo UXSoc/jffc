@@ -509,6 +509,7 @@
         <noscript><link rel="stylesheet" href="css/main.css"></noscript>
         <script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 
         <link rel="icon" sizes="192x192" href="img/jffc-logo/icon.png">
     </head>
@@ -751,18 +752,18 @@
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
-                    <img src="img/speakers/edmond.png" alt="Edmond Gozo">
+                    <img src="img/speakers/camille-zapata.jpg" alt="Camille Zapata">
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
-                        <h1 class="speaker-header">Edmond<br>Gozo</h1>
+                        <h1 class="speaker-header">Camille<br>Zapata</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://twitter.com/edmondgozo" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/edmondgozo" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/sosheepster" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/camillezapata" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
                     <hr class="hr-large uk-hidden@s">
                     <span>
-                        Design Strategist, Tinqer
+                        Product Designer, Huge
                     </span>
                     </div>
                 </div>
@@ -819,6 +820,24 @@
                     <span>
                         Assistant Professor,<br>
                         University of the Philippines-Los Banos
+                    </span>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
+                    <div>
+                    <img src="img/speakers/tj.png" alt="Nico Encarnacion">
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                        <h1 class="speaker-header">Nico<br>Encarnacion</h1>
+                        <div class="uk-flex uk-flex-right@s">
+                            <div class="speaker-social-icon"><a href="https://dribbble.com/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.behance.net/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="behance"></a></div>
+                        </div>
+                    </div>
+                    <hr class="hr-medium uk-visible@s">
+                    <hr class="hr-large uk-hidden@s">
+                    <span>
+                        Lead UI/UX Designer, Make
                     </span>
                     </div>
                 </div>
@@ -1285,6 +1304,12 @@
                     <div class="uk-width-1-1">
                         <label class="uk-form-label">Message</label>
                         <textarea name="message" class="uk-textarea" rows="5" placeholder=""></textarea>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <button class="g-recaptcha uk-button uk-button-primary contact-modal-button" 
+                            data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
+                            data-callback="onSubmit" 
+                            data-badge="inline" >Send</button>
                     </div>
                 </form>
             </div>
