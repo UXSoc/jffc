@@ -1280,20 +1280,24 @@ require_once('form-handler.php');
 
             <div class="uk-grid-medium" uk-grid="">
                 <div class="uk-width-1-2@m uk-text-center">
-                    <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/axure.png" alt="Axure"></div>
+                    <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid=""> 
                         <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="Sketch"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/invision.png" alt="Invision"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/z.com.png" alt="z.com"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/axure.png" alt="Axure"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/book-apart.png" alt="A Book Apart"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/yellow-prints.png" alt="Yellow Pints"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/bdj.png" alt="Belle de Joure"></div>
                     </div>
                 </div>
                 <div class="sponsors-second-col uk-width-1-2@m uk-text-center">
                     <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/comfort-sole.png" alt="A Book Apart"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/comfort-sole.png" alt="Comfort Sole"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/rosenfeld.png" alt="Rosenfeld"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/ctc.jpg" alt="Click the City"></div>
                         <div class="uk-child-width-1-2 sponsors-logo" uk-grid="">
+                            <div class="sponsors-logo"><img src="img/sponsor-logos/uber.png" alt="Uber"></div>
+                            <div class="sponsors-logo"><img src="img/sponsor-logos/trampoline.png" alt="Trampoline Park"></div>
                             <div class="sponsors-logo"><img src="img/sponsor-logos/when-in-manila.jpg" alt="When in Manila"></div>
                             <div class="sponsors-logo"><img src="img/sponsor-logos/framer.png" alt="Framer"></div>
                         </div>
