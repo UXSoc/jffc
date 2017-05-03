@@ -786,6 +786,24 @@ require_once('form-handler.php');
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
+                    <img src="img/speakers/nico.png" alt="Nico Encarnacion">
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                        <h1 class="speaker-header">Nico<br>Encarnacion</h1>
+                        <div class="uk-flex uk-flex-right@s">
+                            <div class="speaker-social-icon"><a href="https://dribbble.com/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.behance.net/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="behance"></a></div>
+                        </div>
+                    </div>
+                    <hr class="hr-medium uk-visible@s">
+                    <hr class="hr-large uk-hidden@s">
+                    <span>
+                        Lead UI/UX Designer, Make
+                    </span>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
+                    <div>
                     <img src="img/speakers/troy.png" alt="Troy Sitosta">
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
                         <h1 class="speaker-header">Troy<br>Sitosta</h1>
@@ -836,24 +854,6 @@ require_once('form-handler.php');
                     <span>
                         Assistant Professor,<br>
                         University of the Philippines-Los Banos
-                    </span>
-                    </div>
-                </div>
-
-                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
-                    <div>
-                    <img src="img/speakers/tj.png" alt="Nico Encarnacion">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
-                        <h1 class="speaker-header">Nico<br>Encarnacion</h1>
-                        <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://dribbble.com/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
-                            <div class="speaker-social-icon"><a href="https://www.behance.net/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="behance"></a></div>
-                        </div>
-                    </div>
-                    <hr class="hr-medium uk-visible@s">
-                    <hr class="hr-large uk-hidden@s">
-                    <span>
-                        Lead UI/UX Designer, Make
                     </span>
                     </div>
                 </div>
