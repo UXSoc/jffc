@@ -5,13 +5,26 @@ generateToken();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!isset($_POST['token']) || !isset($_POST['g-recaptcha-response'])){
-        
+
     }
 
     $url = 'https://www.google.com/recaptcha/api/siteverify';
     $secret = '6Le8jx4UAAAAAHi5D1WswDJ4dhES6JHwURLzY8h_';
+
     if(verifyToken($_POST['token']) && verifyRecaptcha($url, $secret, $_POST['g-recaptcha-response'])){
-        
+
+        if(isset($_POST['email']) && isset($_POST['message'])){
+            $recieverEmail = 'anton.suba19.18@gmail.com';
+            $subject = 'JFFC Inquiry';
+            $senderEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+            mail($recieverEmail, $subject, $_POST['message'], 'From:'.$senderEmail);
+        }
+        else{
+            
+        }
+    }
+    else{
+
     }
 }
 

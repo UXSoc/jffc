@@ -521,7 +521,8 @@ require_once('form-handler.php');
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <script>
         function onSubmit(token) {
-            document.getElementById("demo-form").submit();
+            document.getElementById("contact-form").submit();
+            
         }
         </script>
 
@@ -1280,7 +1281,7 @@ require_once('form-handler.php');
             <div class="uk-grid-medium" uk-grid="">
                 <div class="uk-width-1-2@m uk-text-center">
                     <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid="">
-                        <div class="sponsors-logo"><img src="img/sponsor-logos/axure.jpg" alt="Axure"></div>
+                        <div class="sponsors-logo"><img src="img/sponsor-logos/axure.png" alt="Axure"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="Sketch"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/invision.png" alt="Invision"></div>
                         <div class="sponsors-logo"><img src="img/sponsor-logos/z.com.png" alt="z.com"></div>
@@ -1305,29 +1306,31 @@ require_once('form-handler.php');
         <!--Contact Us Modal-->
         <div id="contact-modal" uk-modal="center: true">
             <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default" type="button" uk-close></button>
-                <h1 class="uk-modal-title">Send an Owl</h1>
-                <form class="uk-grid-small" id="personal-info-form" action="form-handler.php" method="post" uk-grid>
-                    <div class="uk-width-1-1">
-                        <label class="uk-form-label">Name</label>
-                        <input name="name" class="uk-input" type="text" placeholder="">
-                    </div>
-                    <div class="uk-width-1-1">
-                        <label class="uk-form-label">Email</label>
-                        <input name="email" class="uk-input" type="email" placeholder="">
-                    </div>
-                    <div class="uk-width-1-1">
-                        <label class="uk-form-label">Message</label>
-                        <textarea name="message" class="uk-textarea" rows="5" placeholder=""></textarea>
-                    </div>
-                    <div class="uk-width-1-1">
-                        <button class="g-recaptcha uk-button uk-button-primary contact-modal-button" 
-                            data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
-                            data-callback="onSubmit" 
-                            data-badge="inline" >Send</button>
-                    </div>
-                    <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
-                </form>
+                <div id="contact-form-container">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <h1 class="uk-modal-title">Send an Owl</h1>
+                    <form class="uk-grid-small" id="contact-form" action="form-handler.php" method="post" uk-grid>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label">Email</label>
+                            <input name="email" class="uk-input" type="email" placeholder="">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label">Message</label>
+                            <textarea name="message" class="uk-textarea" rows="5" placeholder=""></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <button class="g-recaptcha uk-button uk-button-primary contact-modal-button" 
+                                data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
+                                data-callback="onSubmit" 
+                                data-badge="inline" >Send</button>
+                        </div>
+                        <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
+                    </form>
+                </div>
+
+                <div id="waiting" class="uk-flex uk-flex-middle uk-flex-center uk-hidden">
+                    <div uk-spinner></div>
+                </div>
             </div>
         </div>
 
