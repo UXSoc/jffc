@@ -519,12 +519,6 @@ require_once('form-handler.php');
 
         <!--Invisible recaptcha script-->
         <script>
-            function onSubmit(token) {
-                //document.getElementById("contact-form").submit();
-                
-                document.getElementById('contact-submit').innerHTML = '<div uk-spinner></div>';
-            }
-
             var onloadCallback = function() {
                 document.querySelectorAll('.invisible-recaptcha').forEach(function(element) {
                     grecaptcha.render(element.getAttribute('id'),{
@@ -1408,6 +1402,36 @@ require_once('form-handler.php');
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
         <script src="js/uikit.min.js"></script>
+
+        <script>
+            function onSubmit(token) {
+                //document.getElementById("contact-form").submit();
+                
+                var submitBtn = document.getElementById('contact-submit');
+                submitBtn.innerHTML = '<div uk-spinner></div>';
+
+                $.post('form-handler.php', $('#contact-form').serialize())
+                    .done(function(data){
+                        if(data[0]){
+                            UIkit.notification(data[1], { 
+                                status: 'success',
+                                pos: 'bottom-center'
+                            });
+                            submitBtn.innerHTML = '<span uk-icon="icon: check"></span>';
+                        } 
+                        else{
+                            UIkit.notification(data[1], { 
+                                status: 'danger',
+                                pos: 'bottom-center'
+                            });
+                            submitBtn.innerHTML = '<span uk-icon="icon: warning"></span>';
+                        } 
+                    });
+                
+                setTimeout(function(){submitBtn.innerHTML = 'Send'}, 800);
+            }
+
+        </script>
     </body>
 
 </html>

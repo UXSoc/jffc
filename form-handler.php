@@ -5,7 +5,7 @@ generateToken();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!isset($_POST['token']) || !isset($_POST['g-recaptcha-response'])){
-
+        return [False, 'Verification Error'];
     }
 
     $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -18,13 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $subject = 'JFFC Inquiry';
             $senderEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
             mail($recieverEmail, $subject, $_POST['message'], 'From:'.$senderEmail);
+
+            return [True, 'Thank you!'];
         }
         else{
-            
+            return [False, 'Please provide all details required'];
         }
     }
     else{
-
+        return [False, 'Verification Error'];
     }
 }
 
