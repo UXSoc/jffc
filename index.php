@@ -594,12 +594,11 @@ require_once('form-handler.php');
             </div>
         </nav>
 
-        <div class="uk-container main-container">
-
-            <!--Cover-->
-            <div class="uk-cover-container uk-flex-middle" uk-height-viewport="offset-top: true" uk-grid="">
-                <!--<img src="img/landing-background.png" uk-cover/>-->
-                <div class="uk-width-3-5@m uk-text-left">
+        <!--Cover-->
+        <div class="uk-cover-container uk-flex-middle" uk-height-viewport="" uk-grid="">
+            <img src="img/landing.png" uk-cover/>
+            <div class="uk-position-medium uk-position-cover uk-overlay uk-flex uk-flex-middle uk-margin-large-left" uk-grid >
+                <div class="uk-width-3-5@m uk-text-left" style="padding-bottom:100px;">
                     <span class="subtitle">JFFC 2017</span>
                     <h1>
                         Join the biggest student<br>
@@ -612,11 +611,13 @@ require_once('form-handler.php');
                     <br><br>
                     <a class="uk-button uk-button-primary ghost-button" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
                 </div>
-                <div class="uk-width-2-5@m uk-flex uk-flex-cente uk-visible@m">
+                <div class="uk-width-2-5@m uk-flex uk-flex-cente uk-visible@m" style="padding-bottom:100px;">
                     <div><img src="img/hand.png" alt="JFFC 2017"></div>
                 </div>
             </div>
+        </div>
 
+        <div class="uk-container main-container">
             <!--About-->
             <div class="uk-flex uk-flex-center">
                 <div id="about-section" class="uk-width-1-2@s uk-text-center section-container">
@@ -1278,7 +1279,7 @@ require_once('form-handler.php');
                 </div>
             </div>
 
-            <div class="uk-grid-medium" uk-grid="">
+            <div class="uk-grid-medium" uk-grid="" style="margin-bottom: 60px;">
                 <div class="uk-width-1-2@m uk-text-center">
                     <div class="uk-child-width-1-1 uk-flex uk-flex-center" uk-grid=""> 
                         <div class="sponsors-logo"><img src="img/sponsor-logos/sketch.png" alt="Sketch"></div>
@@ -1339,15 +1340,36 @@ require_once('form-handler.php');
         </div>
 
         <!--Footer / Contact Us-->
-        <div id="contact-section" class="uk-cover-container uk-height-large section-container">
-            <img src="img/footer.png" alt="" uk-cover="">
+        <div id="contact-section" class="uk-cover-container section-container contact-container" >
+            <img src="img/footer-new.png" alt="" uk-cover="">
 
             <div class="uk-position-medium uk-position-cover uk-overlay uk-text-left uk-visible@m uk-flex uk-flex-center uk-grid-medium footer-bottom-container" uk-grid="">
                 <div class="uk-width-1-2@m">
                     <span class="subtitle footer-subtitle">CONTACT US</span>
-                    <h1 class="footer-header">Have any questions?</h1>
+                    <h1 class="footer-header">Send an owl</h1>
                     <hr class="footer-hr uk-visible@s" width="25%">
-                    <a class="uk-button uk-button-primary uk-visible@s" href="#contact-modal" uk-toggle><span>Send an owl</span></a>
+                    <form class="uk-grid-small" id="contact-form" action="form-handler.php" method="post" uk-grid>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label contact-label">Name</label>
+                            <input name="name" class="uk-input contact-input" type="text" placeholder="">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label contact-label">Email</label>
+                            <input name="email" class="uk-input contact-input" type="email" placeholder="">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label contact-label">Message</label>
+                            <textarea name="message" class="uk-textarea contact-input" rows="5" placeholder=""></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <button class="g-recaptcha uk-button uk-button-primary contact-send-button" 
+                                data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
+                                data-callback="onSubmit" 
+                                data-badge="inline" >Send</button>
+                        </div>
+                        <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
+                    </form>
+                    <!--<a class="uk-button uk-button-primary uk-visible@s" href="#contact-modal" uk-toggle><span>Send</span></a>-->
                     <div class="footer-made-by">Passionately made by User Experience Society</div>
                 </div>
                 <div class="uk-width-1-2@m uk-child-width-1-1">
@@ -1358,7 +1380,7 @@ require_once('form-handler.php');
                     </div>
                     <div class="uk-child-width-1-3 footer-presenter-container" uk-grid="">
                         <div><img src="img/presenter-logos/tw.png"></div>
-                        <div><img src="img/presenter-logos/uxsoc.png"></div>
+                        <div><img src="img/presenter-logos/uxsoc.png" ></div>
                         <div><img src="img/presenter-logos/pwdo.png"></div>
                     </div>
                 </div>
@@ -1369,22 +1391,43 @@ require_once('form-handler.php');
             <div class="uk-position-cover uk-overlay uk-text-left uk-hidden@m" uk-grid="">
                 <div class="uk-width-1-2@m">
                     <span class="subtitle footer-subtitle">CONTACT US</span>
-                    <h1 class="footer-header">Have any questions?</h1>
+                    <h1 class="footer-header">Send an owl</h1>
                     <hr class="footer-hr" width="50%">
 
-                    <div class="footer-button-container" uk-grid="">
-                        <div class="footer-button-div"><a class="uk-button uk-button-primary footer-button-mobile" href="#contact-modal" uk-toggle><span>Send an owl</span></a></div>
-                        <div class="uk-flex uk-flex-left" uk-grid="">
-                            <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"></a></div>
-                            <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
+                    <form class="uk-grid-small" id="contact-form" action="form-handler.php" method="post" uk-grid>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label contact-label">Name</label>
+                            <input name="name" class="uk-input contact-input" type="text" placeholder="">
                         </div>
-                        <div class="uk-child-width-1-3 footer-presenter-container" uk-grid="">
-                            <div><img src="img/presenter-logos/tw.png" alt="Tomasino Web"></div>
-                            <div><img src="img/presenter-logos/uxsoc.png" alt="User Experience Society"></div>
-                            <div><img src="img/presenter-logos/pwdo.png" alt="Philippine Web Designers Association"></div>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label contact-label">Email</label>
+                            <input name="email" class="uk-input contact-input" type="email" placeholder="">
                         </div>
-                        <div class="footer-made-by">Passionately made by User Experience Society</div>
-                    </div>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label contact-label">Message</label>
+                            <textarea name="message" class="uk-textarea contact-input" rows="4" placeholder=""></textarea>
+                        </div>
+                        <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
+
+                         <div class="footer-button-container" uk-grid="">
+                            <div class="footer-button-div">
+                                <button class="g-recaptcha uk-button uk-button-primary footer-button-mobile" 
+                                    data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
+                                    data-callback="onSubmit" 
+                                    data-badge="inline" >Send</button>
+                            </div>
+                            <div class="uk-flex uk-flex-left" uk-grid="">
+                                <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"></a></div>
+                                <div class="footer-social-icon"><a href="https://twitter.com/JuniorFFCph" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
+                            </div>
+                            <div class="uk-child-width-1-3 footer-presenter-container" uk-grid="">
+                                <div><img src="img/presenter-logos/tw.png" class="footer-presenter-logo" alt="Tomasino Web"></div>
+                                <div><img src="img/presenter-logos/uxsoc.png" class="footer-presenter-logo" alt="User Experience Society"></div>
+                                <div><img src="img/presenter-logos/pwdo.png" class="footer-presenter-logo" alt="Philippine Web Designers Association"></div>
+                            </div>
+                            <div class="footer-made-by">Passionately made by User Experience Society</div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
