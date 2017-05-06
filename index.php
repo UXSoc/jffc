@@ -518,13 +518,23 @@ require_once('form-handler.php');
         <script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
 
         <!--Invisible recaptcha script-->
-        <script src='https://www.google.com/recaptcha/api.js'></script>
         <script>
-        function onSubmit(token) {
-            document.getElementById("contact-form").submit();
-            
-        }
+            function onSubmit(token) {
+                //document.getElementById("contact-form").submit();
+                
+                document.getElementById('contact-submit').innerHTML = '<div uk-spinner></div>';
+            }
+
+            var onloadCallback = function() {
+                document.querySelectorAll('.invisible-recaptcha').forEach(function(element) {
+                    grecaptcha.render(element.getAttribute('id'),{
+                        'sitekey' : '6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5',
+                        'callback' : onSubmit
+                    });
+                }, this);
+            };
         </script>
+        <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
 
         <!--Icon-->
         <link rel="icon" sizes="192x192" href="img/jffc-logo/icon.png">
@@ -1308,37 +1318,6 @@ require_once('form-handler.php');
 
         </div>
 
-        <!--Contact Us Modal-->
-        <div id="contact-modal" uk-modal="center: true">
-            <div class="uk-modal-dialog uk-modal-body">
-                <div id="contact-form-container">
-                    <button class="uk-modal-close-default" type="button" uk-close></button>
-                    <h1 class="uk-modal-title">Send an Owl</h1>
-                    <form class="uk-grid-small" id="contact-form" action="form-handler.php" method="post" uk-grid>
-                        <div class="uk-width-1-1">
-                            <label class="uk-form-label">Email</label>
-                            <input name="email" class="uk-input" type="email" placeholder="">
-                        </div>
-                        <div class="uk-width-1-1">
-                            <label class="uk-form-label">Message</label>
-                            <textarea name="message" class="uk-textarea" rows="5" placeholder=""></textarea>
-                        </div>
-                        <div class="uk-width-1-1">
-                            <button class="g-recaptcha uk-button uk-button-primary contact-modal-button" 
-                                data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
-                                data-callback="onSubmit" 
-                                data-badge="inline" >Send</button>
-                        </div>
-                        <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
-                    </form>
-                </div>
-
-                <div id="waiting" class="uk-flex uk-flex-middle uk-flex-center uk-hidden">
-                    <div uk-spinner></div>
-                </div>
-            </div>
-        </div>
-
         <!--Footer / Contact Us-->
         <div id="contact-section" class="uk-cover-container section-container contact-container" >
             <img src="img/footer-new.png" alt="" uk-cover="">
@@ -1362,10 +1341,7 @@ require_once('form-handler.php');
                             <textarea name="message" class="uk-textarea contact-input" rows="5" placeholder=""></textarea>
                         </div>
                         <div class="uk-width-1-1">
-                            <button class="g-recaptcha uk-button uk-button-primary contact-send-button" 
-                                data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
-                                data-callback="onSubmit" 
-                                data-badge="inline" >Send</button>
+                            <button id="contact-submit" class="g-recaptcha invisible-recaptcha uk-button uk-button-primary contact-send-button">Send</button>
                         </div>
                         <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
                     </form>
@@ -1411,10 +1387,7 @@ require_once('form-handler.php');
 
                          <div class="footer-button-container" uk-grid="">
                             <div class="footer-button-div">
-                                <button class="g-recaptcha uk-button uk-button-primary footer-button-mobile" 
-                                    data-sitekey="6Le8jx4UAAAAADwdGGaFvaGsTJRCWxAXFpm23ey5" 
-                                    data-callback="onSubmit" 
-                                    data-badge="inline" >Send</button>
+                                <button id="contact-submit-mobile" class="g-recaptcha invisible-recaptcha uk-button uk-button-primary footer-button-mobile">Send</button>
                             </div>
                             <div class="uk-flex uk-flex-left" uk-grid="">
                                 <div class="footer-social-icon"><a href="https://www.facebook.com/JuniorFFCPh/" target="_blank" rel="noopener"><img src="img/social-media-icons/facebook.png" alt="facebook"></a></div>
