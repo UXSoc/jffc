@@ -1083,22 +1083,26 @@ require_once('form-handler.php');
 
             <!--Venue-->
             <div id="venue-section" class="section-container" uk-grid="">
-                <div class="uk-width-1-1@m uk-text-center">
+                <!--<div class="uk-width-1-1@m uk-text-center">
                     <span class="subtitle">VENUE</span>
                     <h1>To Be<br>Announced</h1>
                     <div class="uk-flex uk-flex-center">
                         <hr class="hr-small uk-visible@s">
                         <hr class="hr-large uk-hidden@s">
                     </div>
-                    <!--<span>
-                        Cyberpod 2, Eton Centris<br>
-                        EDSA cor. Quezon Ave.,<br>
-                        Quezon City
-                    </span>-->
-                </div>
-                <!--<div class="uk-width-3-5@m uk-text-center">
-                    <img src="" alt="ETON CENTRIS"/>
                 </div>-->
+                <div class="uk-width-2-5@m uk-text-left">
+                    <span class="subtitle">VENUE</span>
+                    <h1>Ateneo de Manila University</h1>
+                    <hr class="hr-large">
+                    <span>
+                        Katipunan Ave., Loyola Heights<br>
+                        Quezon City
+                    </span>
+                </div>
+                <div class="uk-width-3-5@m uk-text-center">
+                    <img src="venue.png" alt="Ateneo de Manila University"/>
+                </div>
             </div>
 
 
@@ -1403,9 +1407,21 @@ require_once('form-handler.php');
 
         <script>
             function onSubmit(token) {
-                console.log('btn');
+                var valid = true;
+                var inputs = document.querySelectorAll('.contact-input');
+                for(var i = 0; i < inputs.length; i++){
+                    if(!inputs[i].value){
+                         UIkit.notification('Please provide all necessary details', { 
+                            status: 'danger',
+                            pos: 'bottom-center'
+                        });
+                        return;
+                    }
+                }
+                
                 var submitBtn = document.getElementById('contact-submit');
                 submitBtn.innerHTML = '<div uk-spinner></div>';
+                submitBtn.setAttribute('disabled', true);
 
                 $.post('form-handler.php', $('#contact-form').serialize())
                     .done(function(data){
@@ -1415,6 +1431,9 @@ require_once('form-handler.php');
                                 status: 'success',
                                 pos: 'bottom-center'
                             });
+                            inputs.forEach(function(element) {
+                                element.value = '';
+                            }, this);
                         } 
                         else{
                             UIkit.notification(data.message, { 
