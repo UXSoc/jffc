@@ -718,7 +718,6 @@ require_once('form-handler.php');
                         <div class="uk-flex uk-flex-right@s">
                             <div class="speaker-social-icon"><a href="http://niawdeleon.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
                             <div class="speaker-social-icon"><a href="https://twitter.com/niawdeleon" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
-                            <div class="speaker-social-icon"><a href="https://medium.com/@niawdeleon" target="_blank" rel="noopener"><img src="img/social-media-icons/medium.png" alt="linkedin"></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -757,7 +756,6 @@ require_once('form-handler.php');
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
                         <h1 class="speaker-header">Birdie<br>Salva</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://medium.com/@birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/medium.png" alt="web"></a></div>
                             <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
                             <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
@@ -1405,30 +1403,28 @@ require_once('form-handler.php');
 
         <script>
             function onSubmit(token) {
-                //document.getElementById("contact-form").submit();
-                
+                console.log('btn');
                 var submitBtn = document.getElementById('contact-submit');
                 submitBtn.innerHTML = '<div uk-spinner></div>';
 
                 $.post('form-handler.php', $('#contact-form').serialize())
                     .done(function(data){
-                        if(data[0]){
-                            UIkit.notification(data[1], { 
+                        var data = JSON.parse(data);
+                        if(data.status){
+                            UIkit.notification(data.message, { 
                                 status: 'success',
                                 pos: 'bottom-center'
                             });
-                            submitBtn.innerHTML = '<span uk-icon="icon: check"></span>';
                         } 
                         else{
-                            UIkit.notification(data[1], { 
+                            UIkit.notification(data.message, { 
                                 status: 'danger',
                                 pos: 'bottom-center'
                             });
-                            submitBtn.innerHTML = '<span uk-icon="icon: warning"></span>';
                         } 
                     });
-                
-                setTimeout(function(){submitBtn.innerHTML = 'Send'}, 800);
+                grecaptcha.reset();
+                setTimeout(function(){submitBtn.innerHTML = 'Send'}, 900);
             }
 
         </script>

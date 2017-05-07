@@ -5,7 +5,7 @@ generateToken();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!isset($_POST['token']) || !isset($_POST['g-recaptcha-response'])){
-        return [False, 'Verification Error'];
+        echo json_encode(array('status' => False, 'message' => 'Verification Error'));
     }
 
     $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -18,15 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $subject = 'JFFC Inquiry';
             $senderEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
             mail($recieverEmail, $subject, $_POST['message'], 'From:'.$senderEmail);
-
-            return [True, 'Thank you!'];
+            
+            echo json_encode(array('status' => True, 'message' => 'Thank you!'));
         }
         else{
-            return [False, 'Please provide all details required'];
+            echo json_encode(array('status' => False, 'message' => 'Please provide all necessary details'));
         }
     }
     else{
-        return [False, 'Verification Error'];
+        echo json_encode(array('status' => False, 'message' => 'Verification Error'));
     }
 }
 
@@ -47,10 +47,13 @@ function verifyRecaptcha($url, $secret, $response){
         'secret' => $secret,
         'response' => $response
     );
+    $query = http_build_query($data);
     $options = array(
         'http' => array(
+            'header' => "Content-Type: application/x-www-form-urlencoded\r\n".
+                        "Content-Length: ".strlen($query)."\r\n",     
             'method' => 'POST',
-            'content' => http_build_query($data)
+            'content' => $query
         )
     );
     $context = stream_context_create($options);

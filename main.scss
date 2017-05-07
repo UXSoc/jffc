@@ -53,6 +53,11 @@ $navbar-nav-item-active-color: white;
 
 $navbar-item-color: white;
 
+//===========================
+// Notification
+//===========================
+$notification-message-background: #1F2324;
+
 
 // Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
