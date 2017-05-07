@@ -795,6 +795,7 @@ require_once('form-handler.php');
                         <div class="uk-flex uk-flex-right@s">
                             <div class="speaker-social-icon"><a href="https://dribbble.com/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
                             <div class="speaker-social-icon"><a href="https://www.behance.net/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/behance.png" alt="behance"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -911,29 +912,29 @@ require_once('form-handler.php');
                                     </li>
                                     <li>
                                         <div>
-                                            <h4 class="timeline-header">Andre Tacuyan</h4>
-                                            <h4 class="timeline-header">Keynote Speech</h4>
+                                            <h4 class="timeline-header">Christian San Jose</h4>
+                                            <h4 class="timeline-header">Human-Centered Design</h4>
                                             <span>9:00 am</span>    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4 class="timeline-header">Birdie Salva</h4>
+                                            <h4 class="timeline-header">Design Research</h4>
+                                            <span>9:50 am</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Niaw De Leon</h4>
                                             <h4 class="timeline-header">Microcopy</h4>
-                                            <span>9:50 am</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <h4 class="timeline-header">Christian San Jose</h4>
-                                            <h4 class="timeline-header">Human-Centered Design</h4>
                                             <span>10:40 am</span>
                                         </div>
                                     </li>
                                     <li style="background:transparent">
                                         <div>
-                                            <h4 class="timeline-header">Birdie Salva</h4>
-                                            <h4 class="timeline-header">Design Research</h4>
+                                            <h4 class="timeline-header">Andre Tacuyan</h4>
+                                            <h4 class="timeline-header">Keynote Speech</h4>
                                             <span>11:30 am</span>
                                         </div>
                                     </li>                                
@@ -964,15 +965,16 @@ require_once('form-handler.php');
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Camille Zapata</h4>
+                                            <h4 class="timeline-header">Future Web Experiences</h4>
                                             <span>2:20 pm</span>
                                         </div>
                                     </li>
-                                    <li>
+                                    <!--<li>
                                         <div>
                                             <h4 class="timeline-header">Speaker 7</h4>
                                             <span>3:10 am</span>
                                         </div>
-                                    </li>
+                                    </li>-->
                                     <li style="background:transparent">
                                         <div>
                                             <h4 class="timeline-header">Closing</h4>
@@ -1049,32 +1051,36 @@ require_once('form-handler.php');
                                 <h3 class="workshop-header">User Experience</h3>
                                 <span class="workshop-subtitle">10:00AM</span>
                                 <p class="workshop-description">
-                                    Learn the basics of good<br>
-                                    UX design
+                                    Ely Apao will give you a comprehensive primer on user experience 
+                                    and how it applies to the creation of products, services and 
+                                    delightful experiences whether online or offline.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-center">
+                    <div class="uk-flex uk-flex-center uk-margin-medium-top">
                         <div class="uk-width-2-3@s workshop-box-container">
                             <div class="workshop-box">
                                 <h3 class="workshop-header">Firebase</h3>
                                 <span class="workshop-subtitle">10:00AM</span>
                                 <p class="workshop-description">
-                                    Learn the basics of good<br>
-                                    UX design
+                                    Troy Sitosta will walk you through the fundamentals of branding 
+                                    and identity, from the design research to conceptualization and 
+                                    to visual design, and how brand plays a vital role in the web as well.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-center">
+                    <div class="uk-flex uk-flex-center uk-margin-medium-top">
                         <div class="uk-width-2-3@s workshop-box-container">
                             <div class="workshop-box">
                                 <h3 class="workshop-header">Branding</h3>
                                 <span class="workshop-subtitle">10:00AM</span>
                                 <p class="workshop-description">
-                                    Learn the basics of good<br>
-                                    UX design
+                                    TJ Monserrat will help you learn about one of Google's best 
+                                    application development platforms—Firebase. He will lead you 
+                                    through creating a single page application using 
+                                    HTML, CSS and JavaScript.
                                 </p>
                             </div>
                         </div>
@@ -1160,7 +1166,7 @@ require_once('form-handler.php');
                         refund process will be coordinated
                         accordingly.
                     </p>
-                    <p>FOR BLIND AND EARLY BIRD:</p>
+                    <p>FOR BLIND MAGICIAN AND EARLY MAGE:</p>
                     <p>
                         If cancellation is made within thirty(30)
                         working days after payment, a full refund
@@ -1168,7 +1174,7 @@ require_once('form-handler.php');
                         cancellations made past the thirty day
                         period will not be refunded.
                     </p>
-                    <p>FOR REGULARS AND LAT REGISTRATIONS:</p>
+                    <p>FOR HIGH WIZARD AND DARK SORCERER:</p>
                     <p>
                         If cancellation is made on or before June 2,
                         2017, a full refund (100%) will be granted.
