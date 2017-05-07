@@ -14,15 +14,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(verifyToken($_POST['token']) && verifyRecaptcha($url, $secret, $_POST['g-recaptcha-response'])){
 
         if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
+            $recieverEmail = 'helpdesk@jffc.asia';
+            $subject = 'JFFC Inquiry from ' . filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+            $senderEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
             if(!filter_var($senderEmail, FILTER_VALIDATE_EMAIL)){
                 echo json_encode(array('status' => False, 'message' => 'Invalid Email'));
                 return;
             }
 
-            $recieverEmail = 'anton.suba19.18@gmail.com';
-            $subject = 'JFFC Inquiry from ' . filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-            $senderEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
             mail($recieverEmail, $subject, $_POST['message'], 'From:'.$senderEmail);
             
             echo json_encode(array('status' => True, 'message' => 'Thank you!'));

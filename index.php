@@ -1241,7 +1241,7 @@ require_once('form-handler.php');
                     </h2>
                     <p>
                         Yes, of course you can! But please make
-                        sure to do it no later than June 2, 2017
+                        sure to do it no later than June 2, 2017.
                     </p>
 
                     <h2>
