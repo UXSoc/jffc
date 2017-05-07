@@ -794,7 +794,7 @@ require_once('form-handler.php');
                         <h1 class="speaker-header">Nico<br>Encarnacion</h1>
                         <div class="uk-flex uk-flex-right@s">
                             <div class="speaker-social-icon"><a href="https://dribbble.com/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
-                            <div class="speaker-social-icon"><a href="https://www.behance.net/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="behance"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.behance.net/nicoencarnacion" target="_blank" rel="noopener"><img src="img/social-media-icons/behance.png" alt="behance"></a></div>
                         </div>
                     </div>
                     <hr class="hr-medium uk-visible@s">
@@ -811,7 +811,9 @@ require_once('form-handler.php');
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
                         <h1 class="speaker-header">Troy<br>Sitosta</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://dribbble.com/troysitosta" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="twitter"></a></div>
+                            <div class="speaker-social-icon"><a href="http://www.designbyshao.com" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.behance.net/designbyshao" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
+                            <div class="speaker-social-icon"><a href="https://dribbble.com/troysitosta" target="_blank" rel="noopener"><img src="img/social-media-icons/behance.png" alt="behance"></a></div>
                             <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/troy-sitosta-13586532" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
                     </div>
@@ -829,7 +831,7 @@ require_once('form-handler.php');
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
                         <h1 class="speaker-header">Ely<br>Apao</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://www.quora.com/profile/Ely-Apao" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.instagram.com/jozzua/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="instagram"></a></div>
                             <div class="speaker-social-icon"><a href="https://twitter.com/elyapao" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
                             <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/jozzua" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
@@ -954,13 +956,14 @@ require_once('form-handler.php');
                                     </li>
                                     <li>
                                         <div>
-                                            <h4 class="timeline-header">Speaker 5</h4>
+                                            <h4 class="timeline-header">Nico Encarnacion</h4>
+                                            <h4 class="timeline-header">Design Systems</h4>
                                             <span>1:30 pm</span>    
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <h4 class="timeline-header">Speaker 6</h4>
+                                            <h4 class="timeline-header">Camille Zapata</h4>
                                             <span>2:20 pm</span>
                                         </div>
                                     </li>
@@ -1091,17 +1094,19 @@ require_once('form-handler.php');
                         <hr class="hr-large uk-hidden@s">
                     </div>
                 </div>-->
-                <div class="uk-width-2-5@m uk-text-left">
+                <div class="uk-width-2-5@m uk-text-left@m uk-text-center">
                     <span class="subtitle">VENUE</span>
                     <h1>Ateneo de Manila University</h1>
-                    <hr class="hr-large">
+                    <div class="uk-flex uk-flex-left@m uk-flex-center">
+                        <hr class="hr-large">
+                    </div>
                     <span>
                         Katipunan Ave., Loyola Heights<br>
                         Quezon City
                     </span>
                 </div>
                 <div class="uk-width-3-5@m uk-text-center">
-                    <img src="venue.png" alt="Ateneo de Manila University"/>
+                    <img src="img/venue.jpg" alt="Ateneo de Manila University"/>
                 </div>
             </div>
 
@@ -1126,7 +1131,6 @@ require_once('form-handler.php');
                 <div id="faqs-section" class="uk-width-1-2@s uk-text-center section-container">
                     <h1>Frequently Asked Questions</h1>
                     <div class="uk-flex uk-flex-center">
-                        <!--<hr class="hr-small uk-visible@s">-->
                         <hr class="hr-large">
                     </div>
                 </div>
@@ -1326,15 +1330,15 @@ require_once('form-handler.php');
                     <form class="uk-grid-small" id="contact-form" action="form-handler.php" method="post" uk-grid>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label contact-label">Name</label>
-                            <input name="name" class="uk-input contact-input" type="text" placeholder="">
+                            <input name="name" class="uk-input contact-input input-desktop" type="text" placeholder="">
                         </div>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label contact-label">Email</label>
-                            <input name="email" class="uk-input contact-input" type="email" placeholder="">
+                            <input name="email" class="uk-input contact-input input-desktop" type="email" placeholder="">
                         </div>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label contact-label">Message</label>
-                            <textarea name="message" class="uk-textarea contact-input" rows="5" placeholder=""></textarea>
+                            <textarea name="message" class="uk-textarea contact-input input-desktop" rows="5" placeholder=""></textarea>
                         </div>
                         <div class="uk-width-1-1">
                             <button id="contact-submit" class="g-recaptcha invisible-recaptcha uk-button uk-button-primary contact-send-button">Send</button>
@@ -1369,15 +1373,15 @@ require_once('form-handler.php');
                     <form class="uk-grid-small" id="contact-form" action="form-handler.php" method="post" uk-grid>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label contact-label">Name</label>
-                            <input name="name" class="uk-input contact-input" type="text" placeholder="">
+                            <input name="name" class="uk-input contact-input input-mobile" type="text" placeholder="">
                         </div>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label contact-label">Email</label>
-                            <input name="email" class="uk-input contact-input" type="email" placeholder="">
+                            <input name="email" class="uk-input contact-input input-mobile" type="email" placeholder="">
                         </div>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label contact-label">Message</label>
-                            <textarea name="message" class="uk-textarea contact-input" rows="4" placeholder=""></textarea>
+                            <textarea name="message" class="uk-textarea contact-input input-mobile" rows="4" placeholder=""></textarea>
                         </div>
                         <input name="token" type="hidden" value="<?php echo hash_hmac('sha256', '/form-handler.php', $_SESSION['token_key']) ?>">
 
@@ -1407,19 +1411,27 @@ require_once('form-handler.php');
 
         <script>
             function onSubmit(token) {
-                var valid = true;
-                var inputs = document.querySelectorAll('.contact-input');
+                var submitBtn = document.getElementById('contact-submit');
+
+                var inputs = []
+                if(submitBtn.getAttribute('id') == 'contact-submit-mobile'){
+                    inputs = document.querySelectorAll('.input-mobile');
+                }
+                else{
+                    inputs = document.querySelectorAll('.input-desktop');
+                }
+                
                 for(var i = 0; i < inputs.length; i++){
                     if(!inputs[i].value){
-                         UIkit.notification('Please provide all necessary details', { 
+                        UIkit.notification('Please provide all necessary details', { 
                             status: 'danger',
                             pos: 'bottom-center'
                         });
+                        grecaptcha.reset();
                         return;
                     }
                 }
                 
-                var submitBtn = document.getElementById('contact-submit');
                 submitBtn.innerHTML = '<div uk-spinner></div>';
                 submitBtn.setAttribute('disabled', true);
 

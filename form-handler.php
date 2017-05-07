@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 return;
             }
 
-            $recieverEmail = 'helpdesk@jffc.asia';
+            $recieverEmail = 'anton.suba19.18@gmail.com';
             $subject = 'JFFC Inquiry from ' . filter_var($_POST['name'], FILTER_SANITIZE_STRING);
             $senderEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
             mail($recieverEmail, $subject, $_POST['message'], 'From:'.$senderEmail);
