@@ -5,12 +5,31 @@ require_once('form-handler.php');
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
 
-        <meta name="theme-color" content="#181743">
-
         <title>JFFC</title>
+        <meta property='og:title'  content='Junior Form Function and Class, the biggest student web design conference in Asia'>
+        <meta name='twitter:title' content='Junior Form Function and Class, the biggest student web design conference in Asia'>
+
+        <meta property='og:url'  content='http://jffc.asia/'>
+        <meta name='twitter:url' content='http://jffc.asia/'>
+        <link rel='canonical'       href='http://jffc.asia/'>
+
+        <meta name='description'         content='Get tickets and learn about the magic behind great web design'>
+        <meta property='og:description'  content='Get tickets and learn about the magic behind great web design'>
+        <meta name='twitter:description' content='Get tickets and learn about the magic behind great web design'>
+
+        <meta property="og:image"  content="/img/meta-img.png">
+        <meta name="twitter:image" content="/img/meta-img.png">
+
+        <meta property="og:site_name" content='Junior Form Function and Class, the biggest student web design conference in Asia'>
+        <meta property="og:type" content="website">
+
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="theme-color" content="#181743">
 
         <!--Critical CSS-->
         <style type="text/css">
@@ -912,29 +931,29 @@ require_once('form-handler.php');
                                     </li>
                                     <li>
                                         <div>
+                                            <h4 class="timeline-header">Andre Tacuyan</h4>
+                                            <h4 class="timeline-header">Keynote Speech</h4>
+                                            <span>9:00 am</span>    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
                                             <h4 class="timeline-header">Christian San Jose</h4>
                                             <h4 class="timeline-header">Human-Centered Design</h4>
-                                            <span>9:00 am</span>    
+                                            <span>9:50 am</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Birdie Salva</h4>
                                             <h4 class="timeline-header">Design Research</h4>
-                                            <span>9:50 am</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <h4 class="timeline-header">Niaw De Leon</h4>
-                                            <h4 class="timeline-header">Microcopy</h4>
                                             <span>10:40 am</span>
                                         </div>
                                     </li>
                                     <li style="background:transparent">
                                         <div>
-                                            <h4 class="timeline-header">Andre Tacuyan</h4>
-                                            <h4 class="timeline-header">Keynote Speech</h4>
+                                            <h4 class="timeline-header">Niaw De Leon</h4>
+                                            <h4 class="timeline-header">Microcopy</h4>
                                             <span>11:30 am</span>
                                         </div>
                                     </li>                                
@@ -1064,9 +1083,10 @@ require_once('form-handler.php');
                                 <h3 class="workshop-header">Firebase</h3>
                                 <span class="workshop-subtitle">10:00AM</span>
                                 <p class="workshop-description">
-                                    Troy Sitosta will walk you through the fundamentals of branding 
-                                    and identity, from the design research to conceptualization and 
-                                    to visual design, and how brand plays a vital role in the web as well.
+                                    TJ Monserrat will help you learn about one of Google's best 
+                                    application development platforms—Firebase. He will lead you 
+                                    through creating a single page application using 
+                                    HTML, CSS and JavaScript.
                                 </p>
                             </div>
                         </div>
@@ -1077,10 +1097,9 @@ require_once('form-handler.php');
                                 <h3 class="workshop-header">Branding</h3>
                                 <span class="workshop-subtitle">10:00AM</span>
                                 <p class="workshop-description">
-                                    TJ Monserrat will help you learn about one of Google's best 
-                                    application development platforms—Firebase. He will lead you 
-                                    through creating a single page application using 
-                                    HTML, CSS and JavaScript.
+                                    Troy Sitosta will walk you through the fundamentals of branding 
+                                    and identity, from the design research to conceptualization and 
+                                    to visual design, and how brand plays a vital role in the web as well.
                                 </p>
                             </div>
                         </div>
