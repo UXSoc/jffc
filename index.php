@@ -7,25 +7,25 @@ require_once('form-handler.php');
     <head>
         <meta charset="utf-8">
 
-        <title>JFFC</title>
-        <meta property='og:title'  content='Junior Form Function and Class, the biggest student web design conference in Asia'>
-        <meta name='twitter:title' content='Junior Form Function and Class, the biggest student web design conference in Asia'>
+        <title>Junior Form Function & Class • 10-11 June 2017 • Ateneo de Manila University</title>
+        <meta property='og:title'  content='Junior Form Function & Class • 10-11 June 2017 • Ateneo de Manila University'>
+        <meta name='twitter:title' content='Junior Form Function & Class • 10-11 June 2017 • Ateneo de Manila University'>
 
         <meta property='og:url'  content='http://jffc.asia/'>
         <meta name='twitter:url' content='http://jffc.asia/'>
         <link rel='canonical'       href='http://jffc.asia/'>
 
-        <meta name='description'         content='Get tickets and learn about the magic behind great web design'>
-        <meta property='og:description'  content='Get tickets and learn about the magic behind great web design'>
-        <meta name='twitter:description' content='Get tickets and learn about the magic behind great web design'>
+        <meta name='description'         content='Learn about the secrets behind great web design from world renowned speakers. Get your tickets today and join the biggest student web design conference in Asia!'>
+        <meta property='og:description'  content='Learn about the secrets behind great web design from world renowned speakers. Get your tickets today and join the biggest student web design conference in Asia!'>
+        <meta name='twitter:description' content='Learn about the secrets behind great web design from world renowned speakers. Get your tickets today and join the biggest student web design conference in Asia!'>
 
-        <meta property="og:image"  content="/img/meta-img.png">
-        <meta name="twitter:image" content="/img/meta-img.png">
-
-        <meta property="og:site_name" content='Junior Form Function and Class, the biggest student web design conference in Asia'>
-        <meta property="og:type" content="website">
+        <meta property="og:image"  content="http://jffc.asia/img/meta-img.png">
+        <meta name="twitter:image" content="http://jffc.asia/img/meta-img.png">
 
         <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+        <meta property="og:site_name" content='Junior Form Function & Class • 10-11 June 2017 • Ateneo de Manila University'>
+        <meta property="og:type" content="website">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -620,19 +620,21 @@ require_once('form-handler.php');
         <!--Cover-->
         <div class="uk-cover-container uk-flex-middle" uk-height-viewport="" uk-grid="">
             <img src="img/landing.png" uk-cover/>
-            <div class="uk-position-medium uk-position-cover uk-overlay uk-flex uk-flex-middle uk-margin-large-left" uk-grid >
-                <div class="uk-width-3-5@m uk-text-left" style="padding-bottom:100px;">
-                    <span class="subtitle">JFFC 2017</span>
-                    <h1>
-                        Join the biggest student<br>
-                        web design conference<br>
-                        in Asia
-                    </h1>
-                    <span class="landing-date">
-                        June 10 - 11, 2017
-                    </span>
-                    <br><br>
-                    <a class="uk-button uk-button-primary ghost-button" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
+            <div class="uk-position-medium uk-position-cover uk-overlay uk-flex uk-flex-middle" uk-grid >
+                <div class="uk-width-3-5@m uk-text-left uk-flex uk-flex-center" style="padding-bottom:100px;">
+                    <div>
+                        <span class="subtitle">JFFC 2017</span>
+                        <h1>
+                            Join the biggest student<br>
+                            web design conference<br>
+                            in Asia
+                        </h1>
+                        <span class="landing-date">
+                            June 10 - 11, 2017
+                        </span>
+                        <br><br>
+                        <a class="uk-button uk-button-primary ghost-button" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
+                    </div>
                 </div>
                 <div class="uk-width-2-5@m uk-flex uk-flex-cente uk-visible@m" style="padding-bottom:100px;">
                     <div><img src="img/hand.png" alt="JFFC 2017"></div>
@@ -883,6 +885,24 @@ require_once('form-handler.php');
                     </div>
                 </div>
 
+                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
+                    <div>
+                    <img src="img/speakers/paul.jpg" alt="John Paul de Guzman">
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                        <h1 class="speaker-header">John Paul<br>de Guzman</h1>
+                        <div class="uk-flex uk-flex-right@s">
+                            <div class="speaker-social-icon"><a href="http://raincreativelab.com/site/#!/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/john-paul-de-guzman-5233463" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                        </div>
+                    </div>
+                    <hr class="hr-medium uk-visible@s">
+                    <hr class="hr-large uk-hidden@s">
+                    <span>
+                        Chief Creative, Rain Creative Lab
+                    </span>
+                    </div>
+                </div>
+
             </div>
 
             <!--Schedule-->
@@ -988,12 +1008,19 @@ require_once('form-handler.php');
                                             <span>2:20 pm</span>
                                         </div>
                                     </li>
-                                    <!--<li>
+                                    <li>
                                         <div>
-                                            <h4 class="timeline-header">Speaker 7</h4>
-                                            <span>3:10 am</span>
+                                            <h4 class="timeline-header">John Paul de Guzman</h4>
+                                            <h4 class="timeline-header">Web Development</h4>
+                                            <span>3:10 pm</span>
                                         </div>
-                                    </li>-->
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4 class="timeline-header">Panel</h4>
+                                            <span>4:20 pm</span>
+                                        </div>
+                                    </li>
                                     <li style="background:transparent">
                                         <div>
                                             <h4 class="timeline-header">Closing</h4>
