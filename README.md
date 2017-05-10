@@ -1,5 +1,5 @@
 # Junior Form Function and Class 2017
 
-JFFC Website
+Website for JFFC 2017
 
-https://antonsuba.github.io/jffc/
+http://jffc.asia/
