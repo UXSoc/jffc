@@ -834,8 +834,8 @@ require_once('form-handler.php');
                         <h1 class="speaker-header">Troy<br>Sitosta</h1>
                         <div class="uk-flex uk-flex-right@s">
                             <div class="speaker-social-icon"><a href="http://www.designbyshao.com" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://www.behance.net/designbyshao" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
-                            <div class="speaker-social-icon"><a href="https://dribbble.com/troysitosta" target="_blank" rel="noopener"><img src="img/social-media-icons/behance.png" alt="behance"></a></div>
+                            <div class="speaker-social-icon"><a href="https://dribbble.com/troysitosta" target="_blank" rel="noopener"><img src="img/social-media-icons/dribbble.png" alt="dribbble"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.behance.net/designbyshao" target="_blank" rel="noopener"><img src="img/social-media-icons/behance.png" alt="behance"></a></div>
                             <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/troy-sitosta-13586532" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
                     </div>
@@ -899,6 +899,24 @@ require_once('form-handler.php');
                     <hr class="hr-large uk-hidden@s">
                     <span>
                         Chief Creative, Rain Creative Lab
+                    </span>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
+                    <div>
+                    <img src="img/speakers/rico.png" alt="Rico Sta. Cruz">
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                        <h1 class="speaker-header">Rico<br>Sta. Cruz</h1>
+                        <div class="uk-flex uk-flex-right@s">
+                            <div class="speaker-social-icon"><a href="https://github.com/rstacruz" target="_blank" rel="noopener"><img src="img/social-media-icons/github.png" alt="github"></a></div>
+                        </div>
+                    </div>
+                    <hr class="hr-medium uk-visible@s">
+                    <hr class="hr-large uk-hidden@s">
+                    <span>
+                        Software Engineer, Mashup Garage <br>
+                        Founder, Manila.JS
                     </span>
                     </div>
                 </div>
@@ -1063,7 +1081,7 @@ require_once('form-handler.php');
                                 </li>
                                 <li>
                                     <div>
-                                        <h4 class="timeline-header">Workshop Proper</h4>
+                                        <h4 class="timeline-header">Workshop 1</h4>
                                         <span>10:00 am</span>    
                                     </div>
                                 </li>
@@ -1075,7 +1093,7 @@ require_once('form-handler.php');
                                 </li>
                                 <li>
                                     <div>
-                                        <h4 class="timeline-header">Workshop Proper</h4>
+                                        <h4 class="timeline-header">Workshop 2</h4>
                                         <span>1:00 pm</span>
                                     </div>
                                 </li>
@@ -1324,6 +1342,18 @@ require_once('form-handler.php');
                     <p>
                         For all concerns, please don't hesitate to send
                         us an email at helpdesk@jffc.asia.
+                    </p>
+
+                    <h2>
+                        Is the event only for students?
+                    </h2>
+                    <p>
+                        Yes, unfortunately, JFFC is only for students. 
+                        The counterpart event for professionals, 
+                        <a href="http://2017.formfunctionclass.com/" class="link" target="_blank" rel="noopener">FFC</a>, 
+                        is hosted by the Philippine Web Designers Organization. 
+                        JFFC is organized by User Experience Society 
+                        and TomasinoWeb.
                     </p>
                 </div>
             </div>
