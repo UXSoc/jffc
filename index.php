@@ -733,6 +733,26 @@ require_once('form-handler.php');
 
                 <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
                     <div>
+                    <img src="img/speakers/rico.png" alt="Rico Sta. Cruz">
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                        <h1 class="speaker-header">Rico<br>Sta. Cruz</h1>
+                        <div class="uk-flex uk-flex-right@s">
+                            <div class="speaker-social-icon"><a href="http://ricostacruz.com/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
+                            <div class="speaker-social-icon"><a href="https://github.com/rstacruz" target="_blank" rel="noopener"><img src="img/social-media-icons/github.png" alt="github"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/ricostacruz/" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                        </div>
+                    </div>
+                    <hr class="hr-medium uk-visible@s">
+                    <hr class="hr-large uk-hidden@s">
+                    <span>
+                        Software Engineer, Mashup Garage <br>
+                        Founder, Manila.JS
+                    </span>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
+                    <div>
                     <img src="img/speakers/niaw.png" alt="Niaw de Leon">
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
                         <h1 class="speaker-header">Niaw<br>de Leon</h1>
@@ -777,7 +797,7 @@ require_once('form-handler.php');
                     <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
                         <h1 class="speaker-header">Birdie<br>Salva</h1>
                         <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/andretacuyan" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
+                            <div class="speaker-social-icon"><a href="https://twitter.com/birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/twitter.png" alt="twitter"></a></div>
                             <div class="speaker-social-icon"><a href="https://ph.linkedin.com/in/birdiesalva" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
                         </div>
                     </div>
@@ -823,6 +843,24 @@ require_once('form-handler.php');
                     <hr class="hr-large uk-hidden@s">
                     <span>
                         Lead UI/UX Designer, Make
+                    </span>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
+                    <div>
+                    <img src="img/speakers/paul.jpg" alt="John Paul de Guzman">
+                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
+                        <h1 class="speaker-header">John Paul de Guzman</h1>
+                        <div class="uk-flex uk-flex-right@s">
+                            <div class="speaker-social-icon"><a href="http://raincreativelab.com/site/#!/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
+                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/john-paul-de-guzman-5233463" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
+                        </div>
+                    </div>
+                    <hr class="hr-medium uk-visible@s">
+                    <hr class="hr-large uk-hidden@s">
+                    <span>
+                        Chief Creative, Rain Creative Lab
                     </span>
                     </div>
                 </div>
@@ -885,42 +923,6 @@ require_once('form-handler.php');
                     </div>
                 </div>
 
-                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
-                    <div>
-                    <img src="img/speakers/paul.jpg" alt="John Paul de Guzman">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
-                        <h1 class="speaker-header">John Paul<br>de Guzman</h1>
-                        <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="http://raincreativelab.com/site/#!/" target="_blank" rel="noopener"><img src="img/social-media-icons/web.png" alt="web"></a></div>
-                            <div class="speaker-social-icon"><a href="https://www.linkedin.com/in/john-paul-de-guzman-5233463" target="_blank" rel="noopener"><img src="img/social-media-icons/linkedin.png" alt="linkedin"></a></div>
-                        </div>
-                    </div>
-                    <hr class="hr-medium uk-visible@s">
-                    <hr class="hr-large uk-hidden@s">
-                    <span>
-                        Chief Creative, Rain Creative Lab
-                    </span>
-                    </div>
-                </div>
-
-                <div class="uk-width-1-2@m uk-text-left uk-flex uk-flex-center">
-                    <div>
-                    <img src="img/speakers/rico.png" alt="Rico Sta. Cruz">
-                    <div class="uk-child-width-1-2@s speaker-container" uk-grid="">
-                        <h1 class="speaker-header">Rico<br>Sta. Cruz</h1>
-                        <div class="uk-flex uk-flex-right@s">
-                            <div class="speaker-social-icon"><a href="https://github.com/rstacruz" target="_blank" rel="noopener"><img src="img/social-media-icons/github.png" alt="github"></a></div>
-                        </div>
-                    </div>
-                    <hr class="hr-medium uk-visible@s">
-                    <hr class="hr-large uk-hidden@s">
-                    <span>
-                        Software Engineer, Mashup Garage <br>
-                        Founder, Manila.JS
-                    </span>
-                    </div>
-                </div>
-
             </div>
 
             <!--Schedule-->
@@ -978,21 +980,21 @@ require_once('form-handler.php');
                                         <div>
                                             <h4 class="timeline-header">Christian San Jose</h4>
                                             <h4 class="timeline-header">Human-Centered Design</h4>
-                                            <span>9:50 am</span>
+                                            <span>9:45 am</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Birdie Salva</h4>
                                             <h4 class="timeline-header">Design Research</h4>
-                                            <span>10:40 am</span>
+                                            <span>10:30 am</span>
                                         </div>
                                     </li>
                                     <li style="background:transparent">
                                         <div>
                                             <h4 class="timeline-header">Niaw De Leon</h4>
                                             <h4 class="timeline-header">Microcopy</h4>
-                                            <span>11:30 am</span>
+                                            <span>11:15 am</span>
                                         </div>
                                     </li>                                
                                 </ul>
@@ -1009,40 +1011,40 @@ require_once('form-handler.php');
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Lunch Break</h4>
-                                            <span>12:20 pm</span>
+                                            <span>12:00 pm</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Nico Encarnacion</h4>
                                             <h4 class="timeline-header">Design Systems</h4>
-                                            <span>1:30 pm</span>    
+                                            <span>1:10 pm</span>    
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Camille Zapata</h4>
                                             <h4 class="timeline-header">Future Web Experiences</h4>
-                                            <span>2:20 pm</span>
+                                            <span>1:55 pm</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">John Paul de Guzman</h4>
                                             <h4 class="timeline-header">Web Development</h4>
-                                            <span>3:10 pm</span>
+                                            <span>2:40 pm</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <h4 class="timeline-header">Panel</h4>
-                                            <span>4:20 pm</span>
+                                            <span>4:30 pm</span>
                                         </div>
                                     </li>
                                     <li style="background:transparent">
                                         <div>
                                             <h4 class="timeline-header">Closing</h4>
-                                            <span>5:15 pm</span>
+                                            <span>5:25 pm</span>
                                         </div>
                                     </li>                              
                                 </ul>
@@ -1081,26 +1083,26 @@ require_once('form-handler.php');
                                 </li>
                                 <li>
                                     <div>
-                                        <h4 class="timeline-header">Workshop 1</h4>
+                                        <h4 class="timeline-header">Workshop</h4>
                                         <span>10:00 am</span>    
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <h4 class="timeline-header">Lunch</h4>
-                                        <span>12:00 pm</span>
+                                        <span>1:00 pm</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <h4 class="timeline-header">Workshop 2</h4>
-                                        <span>1:00 pm</span>
+                                        <h4 class="timeline-header">Workshop (cont.)</h4>
+                                        <span>2:00 pm</span>
                                     </div>
                                 </li>
                                 <li style="background:transparent">
                                     <div>
                                         <h4 class="timeline-header">Closing</h4>
-                                        <span>6:00 pm</span>
+                                        <span>5:00 pm</span>
                                     </div>
                                 </li>                                
                             </ul>
@@ -1113,7 +1115,7 @@ require_once('form-handler.php');
                         <div class="uk-width-2-3@s workshop-box-container">
                             <div class="workshop-box">
                                 <h3 class="workshop-header">User Experience</h3>
-                                <span class="workshop-subtitle">10:00AM</span>
+                                <span class="workshop-subtitle">Workshop 1</span>
                                 <p class="workshop-description">
                                     Ely Apao will give you a comprehensive primer on user experience 
                                     and how it applies to the creation of products, services and 
@@ -1126,7 +1128,7 @@ require_once('form-handler.php');
                         <div class="uk-width-2-3@s workshop-box-container">
                             <div class="workshop-box">
                                 <h3 class="workshop-header">Firebase</h3>
-                                <span class="workshop-subtitle">10:00AM</span>
+                                <span class="workshop-subtitle">Workshop 2</span>
                                 <p class="workshop-description">
                                     TJ Monserrat will help you learn about one of Google's best 
                                     application development platforms—Firebase. He will lead you 
@@ -1140,7 +1142,7 @@ require_once('form-handler.php');
                         <div class="uk-width-2-3@s workshop-box-container">
                             <div class="workshop-box">
                                 <h3 class="workshop-header">Branding</h3>
-                                <span class="workshop-subtitle">10:00AM</span>
+                                <span class="workshop-subtitle">Workshop 3</span>
                                 <p class="workshop-description">
                                     Troy Sitosta will walk you through the fundamentals of branding 
                                     and identity, from the design research to conceptualization and 
@@ -1208,6 +1210,18 @@ require_once('form-handler.php');
 
             <div class="uk-grid-large" uk-grid="">
                 <div class="uk-width-1-2@m uk-text-left">
+                    <h2>
+                        Is the event only for students?
+                    </h2>
+                    <p>
+                        Yes, unfortunately, JFFC is only for students. 
+                        The counterpart event for professionals, 
+                        <a href="http://2017.formfunctionclass.com/" class="link" target="_blank" rel="noopener">FFC</a>, 
+                        is hosted by the Philippine Web Designers Organization. 
+                        JFFC is organized by User Experience Society 
+                        and TomasinoWeb.
+                    </p>
+
                     <h2>
                         How many tickets can I order at 
                         time? And do I have to be 
@@ -1344,17 +1358,6 @@ require_once('form-handler.php');
                         us an email at helpdesk@jffc.asia.
                     </p>
 
-                    <h2>
-                        Is the event only for students?
-                    </h2>
-                    <p>
-                        Yes, unfortunately, JFFC is only for students. 
-                        The counterpart event for professionals, 
-                        <a href="http://2017.formfunctionclass.com/" class="link" target="_blank" rel="noopener">FFC</a>, 
-                        is hosted by the Philippine Web Designers Organization. 
-                        JFFC is organized by User Experience Society 
-                        and TomasinoWeb.
-                    </p>
                 </div>
             </div>
 
