@@ -1192,7 +1192,21 @@ require_once('form-handler.php');
                         <hr class="hr-small uk-visible@s">
                         <hr class="hr-large uk-hidden@s">
                     </div>
-                    <img src="img/price-list.png" alt="PRICE LIST" class="image"><br><br>
+                    <!--<img src="img/price-list.png" alt="PRICE LIST" class="image"><br><br>-->
+                    <div class="uk-margin-medium-top" uk-grid>
+                        <div class="uk-width-1-3@s">
+                            <span class="ticket-date subtitle">APRIL 1 - APRIL 22</span>
+                            <img src="img/tickets/eager-mage.png" alt="Eager Mage" class="image uk-margin-top">
+                        </div>
+                        <div class="uk-width-1-3@s">
+                            <span class="ticket-date subtitle">APRIL 22 - MAY 20</span>
+                            <img src="img/tickets/dark-magician.png" alt="Dark Magician" class="image uk-margin-top">
+                        </div>
+                        <div class="uk-width-1-3@s">
+                            <span class="ticket-date subtitle">MAY 20 - JUNE 2</span>
+                            <img src="img/tickets/high-wizard.png" alt="High Wizard" class="image uk-margin-top">
+                        </div>
+                    </div>
                     <a class="uk-button uk-button-primary" href="https://www.eventbrite.com/e/junior-form-function-class-jffc-2017-tickets-32376719640" target="_blank" rel="noopener"><span>Get Tickets</span></a>
                 </div>
             </div>
