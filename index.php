@@ -724,8 +724,7 @@ require_once('form-handler.php');
                     <hr class="hr-medium uk-visible@s">
                     <hr class="hr-large uk-hidden@s">
                     <span>
-                        User Experience Designer,<br>
-                        Playground Global<br>
+                        UX Designer, Essential<br>
                         Former User Experience Designer, Google
                     </span>
                     </div>
@@ -1267,11 +1266,12 @@ require_once('form-handler.php');
                     </p>
                     <p>FOR BLIND MAGICIAN AND EARLY MAGE:</p>
                     <p>
-                        If cancellation is made within thirty(30)
-                        working days after payment, a full refund
-                        (100%) will be granted. However,
-                        cancellations made past the thirty day
-                        period will not be refunded.
+                        If cancellation is made within thirty (30) 
+                        working days after payment, and no later than 
+                        June 2, 2017 if the thirty-day period goes 
+                        beyond June 2, a full refund (100%) will be granted. 
+                        However, cancellations made after June 2, 2017 
+                        will not be refunded.
                     </p>
                     <p>FOR HIGH WIZARD AND DARK SORCERER:</p>
                     <p>
